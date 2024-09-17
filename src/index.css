@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -72,5 +74,14 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Noto Sans JP', sans-serif;
   }
+}
+
+a {
+  @apply transition-colors duration-300;
+}
+
+a:hover {
+  @apply text-yellow-400;
 }
