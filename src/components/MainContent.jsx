@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 
 function MainContent() {
   return (
@@ -59,8 +60,20 @@ function MainContent() {
           <div className="mb-4">
             <Input type="email" placeholder="メールアドレス" required />
           </div>
-          <div className="mb-4">
-            <Textarea placeholder="メッセージ" required />
+          <div className="mb-4 flex flex-col items-start">
+            <Label className="mb-2">興味のあるプログラム</Label>
+            <div className="flex items-center space-x-2 mb-2">
+              <Checkbox id="internship" />
+              <Label htmlFor="internship">海外インターンシップ</Label>
+            </div>
+            <div className="flex items-center space-x-2 mb-2">
+              <Checkbox id="workingholiday" />
+              <Label htmlFor="workingholiday">ワーキングホリデー</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox id="university" />
+              <Label htmlFor="university">大学進学</Label>
+            </div>
           </div>
           <Button type="submit">送信</Button>
         </form>
