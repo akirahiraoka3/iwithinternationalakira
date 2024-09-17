@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -24,23 +26,6 @@ const Index = () => {
     </div>
   );
 };
-
-const Header = () => (
-  <header className="container mx-auto px-4 py-4 flex justify-between items-center">
-    <div className="text-2xl font-bold">IWITH International</div>
-    <nav className="hidden md:flex space-x-4">
-      <a href="#about" className="text-gray-600 hover:text-gray-900">私たちについて</a>
-      <a href="#programs" className="text-gray-600 hover:text-gray-900">プログラム</a>
-      <a href="#reasons" className="text-gray-600 hover:text-gray-900">選ばれる理由</a>
-      <a href="#faq" className="text-gray-600 hover:text-gray-900">よくある質問</a>
-      <a href="#countries" className="text-gray-600 hover:text-gray-900">国</a>
-      <a href="#purposes" className="text-gray-600 hover:text-gray-900">留学の目的</a>
-      <a href="#testimonials" className="text-gray-600 hover:text-gray-900">体験談</a>
-      <a href="#contact" className="text-gray-600 hover:text-gray-900">お問い合わせ</a>
-    </nav>
-    <Button>お問い合わせ</Button>
-  </header>
-);
 
 const HeroSection = () => (
   <section className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
@@ -231,14 +216,6 @@ const ContactSection = () => (
       <Button type="submit" className="w-full">送信</Button>
     </form>
   </section>
-);
-
-const Footer = () => (
-  <footer className="bg-gray-100 py-8">
-    <div className="container mx-auto px-4 text-center">
-      <p className="text-sm text-gray-600">© 2024 IWITH International. All rights reserved.</p>
-    </div>
-  </footer>
 );
 
 export default Index;
