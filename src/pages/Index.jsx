@@ -98,41 +98,15 @@ const ReasonsSection = () => (
   </section>
 );
 
-const FAQSection = () => (
-  <section id="faq" className="container mx-auto px-4 py-16">
-    <h2 className="text-3xl font-bold mb-8 text-center">よくある質問</h2>
-    <Accordion type="single" collapsible className="w-full max-w-2xl mx-auto">
-      <AccordionItem value="item-1">
-        <AccordionTrigger>留学の費用はどのくらいかかりますか？</AccordionTrigger>
-        <AccordionContent>
-          留学の費用は、プログラムの種類、期間、滞在先によって異なります。詳細は個別相談でご案内いたします。
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-2">
-        <AccordionTrigger>語学力が不安ですが大丈夫ですか？</AccordionTrigger>
-        <AccordionContent>
-          初心者向けのプログラムもご用意しています。事前の語学研修も含めたプランをご提案いたします。
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="item-3">
-        <AccordionTrigger>ビザの取得はサポートしてもらえますか？</AccordionTrigger>
-        <AccordionContent>
-          はい、ビザ申請に必要な書類の準備から申請手続きまでサポートいたします。
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
-  </section>
-);
-
 const CountriesSection = () => (
   <section id="countries" className="bg-gray-100 py-16">
     <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">国</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">国（オーストラリア）</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {['アメリカ', 'イギリス', 'オーストラリア', 'カナダ', 'ニュージーランド', 'ドイツ', 'フランス', 'スペイン'].map((country, index) => (
+        {['シドニー', 'メルボルン', 'パース', 'ブリスベン', 'ゴールドコースト', 'ケアンズ', 'アデレード', 'キャンベラ'].map((city, index) => (
           <Card key={index}>
             <CardContent className="flex items-center justify-center h-24">
-              <p className="text-lg font-semibold">{country}</p>
+              <p className="text-lg font-semibold">{city}</p>
             </CardContent>
           </Card>
         ))}
@@ -217,5 +191,8 @@ const ContactSection = () => (
     </form>
   </section>
 );
+
+export default Index;
+
 
 export default Index;
