@@ -193,6 +193,3 @@ const ContactSection = () => (
 );
 
 export default Index;
-
-
-export default Index;
