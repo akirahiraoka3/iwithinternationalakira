@@ -201,6 +201,15 @@ const ContactSection = () => (
       <div className="mb-4">
         <Input type="email" placeholder="メールアドレス" required />
       </div>
+      <div className="mb-4">
+        <Input type="tel" placeholder="電話番号" />
+      </div>
+      <div className="mb-4 space-y-2">
+        <div className="flex items-center space-x-2">
+          <Checkbox id="freeConsultation" />
+          <Label htmlFor="freeConsultation">無料相談を予約する</Label>
+        </div>
+      </div>
       <div className="mb-4 space-y-2">
         <Label>興味のあるプログラム</Label>
         <div className="flex items-center space-x-2">
