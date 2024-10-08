@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
@@ -10,10 +10,13 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 
 const Index = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  const contactRef = useRef(null);
+
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+      setIsChecked(true);
     }
   };
 
@@ -28,7 +31,7 @@ const Index = () => {
       <PurposesSection />
       <TestimonialsSection />
       <FAQSection />
-      <ContactSection />
+      <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
       <Footer />
     </div>
   );
@@ -198,8 +201,8 @@ const FAQSection = () => (
   </section>
 );
 
-const ContactSection = () => (
-  <section id="contact" className="container mx-auto px-4 py-16">
+const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
+  <section id="contact" className="container mx-auto px-4 py-16" ref={contactRef}>
     <h2 className="text-3xl font-bold mb-8 text-center">お問い合わせ</h2>
     <form className="max-w-md mx-auto">
       <div className="mb-4">
@@ -213,7 +216,11 @@ const ContactSection = () => (
       </div>
       <div className="mb-4 space-y-2">
         <div className="flex items-center space-x-2">
-          <Checkbox id="freeConsultation" />
+          <Checkbox 
+            id="freeConsultation" 
+            checked={isChecked}
+            onCheckedChange={(checked) => setIsChecked(checked)}
+          />
           <Label htmlFor="freeConsultation">無料相談を予約する</Label>
         </div>
       </div>
@@ -236,6 +243,7 @@ const ContactSection = () => (
         <Textarea placeholder="メッセージ" className="w-full" rows={4} />
       </div>
       <Button type="submit" className="w-full">送信</Button>
+    </form>
     </form>
   </section>
 );
