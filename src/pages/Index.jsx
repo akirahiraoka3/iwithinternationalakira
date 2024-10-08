@@ -226,24 +226,20 @@ const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
       </div>
       <div className="mb-4 space-y-2">
         <Label>興味のあるプログラム</Label>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="internship" />
-          <Label htmlFor="internship">海外インターンシップ</Label>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="workingholiday" />
-          <Label htmlFor="workingholiday">ワーキングホリデー</Label>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox id="university" />
-          <Label htmlFor="university">大学進学</Label>
-        </div>
+        {['internship', 'workingholiday', 'university'].map((program) => (
+          <div key={program} className="flex items-center space-x-2">
+            <Checkbox id={program} />
+            <Label htmlFor={program}>
+              {program === 'internship' ? '海外インターンシップ' :
+               program === 'workingholiday' ? 'ワーキングホリデー' : '大学進学'}
+            </Label>
+          </div>
+        ))}
       </div>
       <div className="mb-4">
         <Textarea placeholder="メッセージ" className="w-full" rows={4} />
       </div>
       <Button type="submit" className="w-full">送信</Button>
-    </form>
     </form>
   </section>
 );
