@@ -21,12 +21,13 @@ export const CountriesSection = () => {
         <Carousel
           opts={{
             align: "start",
+            loop: true,
           }}
-          className="w-full max-w-full mx-auto"
+          className="w-full max-w-5xl mx-auto"
         >
-          <CarouselContent className="-ml-2 flex">
+          <CarouselContent className="-ml-2">
             {cities.map((city, index) => (
-              <CarouselItem key={index} className="pl-2 flex-shrink-0" style={{ width: 'calc(10cm + 0.5cm)' }}>
+              <CarouselItem key={index} className="pl-2 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Card className="w-[10cm] h-[13cm] overflow-hidden">
                     <CardContent className="p-4 h-full flex flex-col">
