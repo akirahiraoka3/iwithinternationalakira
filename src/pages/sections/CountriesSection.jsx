@@ -29,7 +29,7 @@ export const CountriesSection = () => {
             {cities.map((city, index) => (
               <CarouselItem key={index} className="pl-2 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
-                  <Card className="w-[10cm] h-[13cm] overflow-hidden">
+                  <Card className="w-[9cm] h-[12cm] overflow-hidden">
                     <CardContent className="p-4 h-full flex flex-col">
                       <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
                       <p className="text-sm text-gray-600 mb-4 flex-grow">{city.description}</p>
