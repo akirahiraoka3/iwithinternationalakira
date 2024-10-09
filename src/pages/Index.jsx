@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import FAQSection from '../components/FAQSection';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Index = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -118,15 +119,33 @@ const CountriesSection = () => (
   <section id="countries" className="bg-gray-100 py-16">
     <div className="container mx-auto px-4">
       <h2 className="text-3xl font-bold mb-8 text-center">国（オーストラリア）</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {['シドニー', 'メルボルン', 'パース', 'ブリスベン', 'ゴールドコースト', 'ケアンズ', 'アデレード', 'キャンベラ'].map((city, index) => (
-          <Card key={index} className="transition-transform duration-300 hover:scale-105">
-            <CardContent className="flex items-center justify-center h-24">
-              <p className="text-lg font-semibold">{city}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+      <Carousel className="w-full max-w-xs mx-auto">
+        <CarouselContent>
+          {[
+            { name: 'シドニー', image: '/sydney.jpg' },
+            { name: 'メルボルン', image: '/melbourne.jpg' },
+            { name: 'パース', image: '/perth.jpg' },
+            { name: 'ブリスベン', image: '/brisbane.jpg' },
+            { name: 'ゴールドコースト', image: '/gold-coast.jpg' },
+            { name: 'ケアンズ', image: '/cairns.jpg' },
+            { name: 'アデレード', image: '/adelaide.jpg' },
+            { name: 'キャンベラ', image: '/canberra.jpg' },
+          ].map((city, index) => (
+            <CarouselItem key={index}>
+              <Card className="w-[7.94cm] h-[7.94cm] overflow-hidden">
+                <CardContent className="p-0">
+                  <img src={city.image} alt={city.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <p className="text-white text-lg font-semibold">{city.name}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
     </div>
   </section>
 );
