@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
 const Header = ({ scrollToContact }) => (
   <header className="container mx-auto px-4 py-4 flex justify-between items-center">
-    <div className="text-2xl font-bold">IWITH International</div>
+    <Link to="/" className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
+      IWITH International
+    </Link>
     <nav className="hidden md:flex space-x-6">
       <a href="#about" className="text-gray-600 hover:text-gray-900">私たちについて</a>
       <a href="#programs" className="text-gray-600 hover:text-gray-900">プログラム</a>
