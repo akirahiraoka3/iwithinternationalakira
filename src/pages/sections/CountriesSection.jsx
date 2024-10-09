@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const CountriesSection = () => {
   const cities = [
@@ -17,23 +18,37 @@ export const CountriesSection = () => {
     <section id="countries" className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">国（オーストラリア）</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {cities.map((city, index) => (
-            <Card key={index} className="w-[9cm] h-[12cm] overflow-hidden">
-              <CardContent className="p-4 h-full flex flex-col">
-                <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
-                <p className="text-sm text-gray-600 mb-4 flex-grow">{city.description}</p>
-                <div className="h-[50%] relative">
-                  <img
-                    src={`/images/${city.name.toLowerCase()}.jpg`}
-                    alt={city.name}
-                    className="w-full h-full object-cover rounded"
-                  />
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto"
+        >
+          <CarouselContent>
+            {cities.map((city, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
+                  <Card className="w-[9cm] h-[12cm] overflow-hidden">
+                    <CardContent className="p-4 h-full flex flex-col">
+                      <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
+                      <p className="text-sm text-gray-600 mb-4 flex-grow">{city.description}</p>
+                      <div className="h-[50%] relative">
+                        <img
+                          src={`/images/${city.name.toLowerCase()}.jpg`}
+                          alt={city.name}
+                          className="w-full h-full object-cover rounded"
+                        />
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
