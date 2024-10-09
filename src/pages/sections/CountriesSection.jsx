@@ -19,20 +19,16 @@ export const CountriesSection = () => {
         <h2 className="text-3xl font-bold mb-8 text-center">国（オーストラリア）</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {cities.map((city, index) => (
-            <Card key={index} className="w-[5cm] h-[8cm] overflow-hidden">
-              <CardContent className="p-0 h-full flex flex-col">
-                <div className="h-1/2 relative">
+            <Card key={index} className="w-[9cm] h-[12cm] overflow-hidden">
+              <CardContent className="p-4 h-full flex flex-col">
+                <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
+                <p className="text-sm text-gray-600 mb-4 flex-grow">{city.description}</p>
+                <div className="h-[50%] relative">
                   <img
                     src={`/images/${city.name.toLowerCase()}.jpg`}
                     alt={city.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover rounded"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                    <h3 className="text-white text-lg font-semibold p-2">{city.name}</h3>
-                  </div>
-                </div>
-                <div className="h-1/2 p-2 overflow-y-auto">
-                  <p className="text-sm text-gray-600">{city.description}</p>
                 </div>
               </CardContent>
             </Card>
