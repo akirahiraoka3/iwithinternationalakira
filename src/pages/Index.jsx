@@ -12,229 +12,39 @@ import FAQSection from '../components/FAQSection';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const HeroSection = ({ scrollToContact }) => (
-  <section className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
-    <div className="md:w-1/2 mb-8 md:mb-0">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">海外インターンシップ・留学ならIWITH Internationalへ</h1>
-      <p className="text-gray-600 mb-6">あなたの未来を一緒に築きましょう。</p>
-      <Button size="lg" className="mr-4 bg-black text-white" onClick={scrollToContact}>無料相談を予約</Button>
-      <Button variant="outline" size="lg">詳細を見る</Button>
-    </div>
-    <div className="md:w-1/2">
-      <img src="/placeholder.svg" alt="IWITH International" className="w-full h-auto" />
-    </div>
-  </section>
-);
+// Import all section components
+import { HeroSection } from './sections/HeroSection';
+import { AboutSection } from './sections/AboutSection';
+import { ProgramsSection } from './sections/ProgramsSection';
+import { ReasonsSection } from './sections/ReasonsSection';
+import { CountriesSection } from './sections/CountriesSection';
+import { PurposesSection } from './sections/PurposesSection';
+import { TestimonialsSection } from './sections/TestimonialsSection';
+import { ContactSection } from './sections/ContactSection';
 
-const AboutSection = () => (
-  <section id="about" className="bg-gray-100 py-16">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">私たちについて</h2>
-      <p className="text-center max-w-2xl mx-auto">
-        IWITH Internationalは、海外でのインターンシップや留学を通じて、グローバルな経験を積みたい方をサポートするエージェントです。
-      </p>
-    </div>
-  </section>
-);
+const Index = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  const contactRef = useRef(null);
 
-const ProgramsSection = () => (
-  <section id="programs" className="container mx-auto px-4 py-16">
-    <h2 className="text-3xl font-bold mb-8 text-center">プログラム</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {[
-        { title: '海外インターンシップ', description: '実践的なスキルを海外で身につけましょう。' },
-        { title: '語学留学', description: '現地の文化を体験しながら語学力を向上。' },
-        { title: '大学留学サポート', description: '海外大学への進学をトータルサポート。' },
-      ].map((program, index) => (
-        <Card key={index} className="transition-transform duration-300 hover:scale-105">
-          <CardHeader>
-            <CardTitle>{program.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600">{program.description}</p>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-    <div className="text-center mt-8">
-      <Link to="/programs">
-        <Button>プログラム詳細を見る</Button>
-      </Link>
-    </div>
-  </section>
-);
-
-const ReasonsSection = () => (
-  <section id="reasons" className="bg-gray-100 py-16">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">選ばれる理由</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {[
-          { title: '豊富な経験', description: '10年以上の留学サポート実績' },
-          { title: 'カスタマイズされたプラン', description: '一人ひとりのニーズに合わせたプログラム' },
-          { title: '24時間サポート', description: '留学中も安心のサポート体制' },
-        ].map((reason, index) => (
-          <Card key={index} className="transition-transform duration-300 hover:scale-105">
-            <CardHeader>
-              <CardTitle>{reason.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600">{reason.description}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-const CountriesSection = () => (
-  <section id="countries" className="bg-gray-100 py-16">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">国（オーストラリア）</h2>
-      <AustralianCitiesCarousel />
-    </div>
-  </section>
-);
-
-const AustralianCitiesCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false, align: 'start' });
-
-  const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
-  const scrollNext = () => emblaApi && emblaApi.scrollNext();
-
-  const cities = [
-    'シドニー', 'メルボルン', 'パース', 'ブリスベン',
-    'ゴールドコースト', 'ケアンズ', 'アデレード', 'キャンベラ'
-  ];
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">
-          {cities.map((city, index) => (
-            <div key={index} className="flex-[0_0_50%] min-w-0 sm:flex-[0_0_33.33%] md:flex-[0_0_25%] lg:flex-[0_0_20%] p-2">
-              <Card className="w-full h-[7.94cm] transition-transform duration-300 hover:scale-105">
-                <CardContent className="p-0 h-full">
-                  <img
-                    src={`/images/${city.toLowerCase()}.jpg`}
-                    alt={city}
-                    className="w-full h-full object-cover rounded-t-lg"
-                  />
-                  <div className="absolute inset-0 flex items-end justify-center bg-gradient-to-t from-black/60 to-transparent">
-                    <p className="text-white text-lg font-semibold p-4">{city}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          ))}
-        </div>
-      </div>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/80 hover:bg-white"
-        onClick={scrollPrev}
-      >
-        <ChevronLeft className="h-4 w-4" />
-      </Button>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/80 hover:bg-white"
-        onClick={scrollNext}
-      >
-        <ChevronRight className="h-4 w-4" />
-      </Button>
-    </div>
+    <>
+      <Header />
+      <HeroSection scrollToContact={scrollToContact} />
+      <AboutSection />
+      <ProgramsSection />
+      <ReasonsSection />
+      <CountriesSection />
+      <PurposesSection />
+      <TestimonialsSection />
+      <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
+      <FAQSection />
+      <Footer />
+    </>
   );
 };
-
-const PurposesSection = () => (
-  <section id="purposes" className="container mx-auto px-4 py-16">
-    <h2 className="text-3xl font-bold mb-8 text-center">留学の目的</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {[
-        { title: '語学力向上', description: 'ネイティブスピーカーとの日常会話で実践的な語学力を身につける' },
-        { title: 'キャリアアップ', description: '国際的な職場経験を通じて、グローバルなキャリアを築く' },
-        { title: '異文化理解', description: '多様な文化に触れ、国際感覚を養う' },
-      ].map((purpose, index) => (
-        <Card key={index} className="transition-transform duration-300 hover:scale-105">
-          <CardHeader>
-            <CardTitle>{purpose.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600">{purpose.description}</p>
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </section>
-);
-
-const TestimonialsSection = () => (
-  <section id="testimonials" className="bg-gray-100 py-16">
-    <div className="container mx-auto px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">体験談</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card className="transition-transform duration-300 hover:scale-105">
-          <CardContent className="pt-6">
-            <p className="text-gray-600 mb-4">"IWITH Internationalのおかげで、憧れの海外インターンシップを経験できました。"</p>
-            <p className="font-bold">- 佐藤花子さん</p>
-          </CardContent>
-        </Card>
-        <Card className="transition-transform duration-300 hover:scale-105">
-          <CardContent className="pt-6">
-            <p className="text-gray-600 mb-4">"親身なサポートで安心して留学生活を送ることができました。"</p>
-            <p className="font-bold">- 鈴木太郎さん</p>
-          </CardContent>
-        </Card>
-      </div>
-    </div>
-  </section>
-);
-
-const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
-  <section id="contact" className="container mx-auto px-4 py-16" ref={contactRef}>
-    <h2 className="text-3xl font-bold mb-8 text-center">お問い合わせ</h2>
-    <form className="max-w-md mx-auto">
-      <div className="mb-4">
-        <Input type="text" placeholder="お名前" required />
-      </div>
-      <div className="mb-4">
-        <Input type="email" placeholder="メールアドレス" required />
-      </div>
-      <div className="mb-4">
-        <Input type="tel" placeholder="電話番号" />
-      </div>
-      <div className="mb-4 space-y-2">
-        <div className="flex items-center space-x-2">
-          <Checkbox 
-            id="freeConsultation" 
-            checked={isChecked}
-            onCheckedChange={(checked) => setIsChecked(checked)}
-          />
-          <Label htmlFor="freeConsultation">無料相談を予約する</Label>
-        </div>
-      </div>
-      <div className="mb-4 space-y-2">
-        <Label>興味のあるプログラム</Label>
-        {['internship', 'workingholiday', 'university'].map((program) => (
-          <div key={program} className="flex items-center space-x-2">
-            <Checkbox id={program} />
-            <Label htmlFor={program}>
-              {program === 'internship' ? '海外インターンシップ' :
-               program === 'workingholiday' ? 'ワーキングホリデー' : '大学進学'}
-            </Label>
-          </div>
-        ))}
-      </div>
-      <div className="mb-4">
-        <Textarea placeholder="メッセージ" className="w-full" rows={4} />
-      </div>
-      <Button type="submit" className="w-full">送信</Button>
-    </form>
-  </section>
-);
 
 export default Index;
