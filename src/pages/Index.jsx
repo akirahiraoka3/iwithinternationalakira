@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button } from "@/components/ui/button";
@@ -80,6 +81,11 @@ const ProgramsSection = () => (
           </CardContent>
         </Card>
       ))}
+    </div>
+    <div className="text-center mt-8">
+      <Link to="/programs">
+        <Button>プログラム詳細を見る</Button>
+      </Link>
     </div>
   </section>
 );
