@@ -63,6 +63,7 @@ const AboutSection = () => (
   </section>
 );
 
+
 const ProgramsSection = () => (
   <section id="programs" className="container mx-auto px-4 py-16">
     <h2 className="text-3xl font-bold mb-8 text-center">プログラム</h2>
@@ -72,7 +73,7 @@ const ProgramsSection = () => (
         { title: '語学留学', description: '現地の文化を体験しながら語学力を向上。' },
         { title: '大学留学サポート', description: '海外大学への進学をトータルサポート。' },
       ].map((program, index) => (
-        <Card key={index}>
+        <Card key={index} className="transition-transform duration-300 hover:scale-105">
           <CardHeader>
             <CardTitle>{program.title}</CardTitle>
           </CardHeader>
