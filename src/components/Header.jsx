@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
-const Header = () => (
+const Header = ({ scrollToContact }) => (
   <header className="container mx-auto px-4 py-4 flex justify-between items-center">
     <div className="text-2xl font-bold">IWITH International</div>
     <nav className="hidden md:flex space-x-6">
@@ -13,7 +13,7 @@ const Header = () => (
       <a href="#purposes" className="text-gray-600 hover:text-gray-900">留学の目的</a>
       <a href="#testimonials" className="text-gray-600 hover:text-gray-900">体験談</a>
     </nav>
-    <Button>お問い合わせ</Button>
+    <Button onClick={scrollToContact}>お問い合わせ</Button>
   </header>
 );
 

@@ -22,7 +22,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <Header scrollToContact={scrollToContact} />
       <HeroSection scrollToContact={scrollToContact} />
       <AboutSection />
       <ProgramsSection />
