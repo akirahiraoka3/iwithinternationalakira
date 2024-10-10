@@ -17,8 +17,8 @@ export const ProgramsSection = () => {
       link: '/language-study'
     },
     { 
-      title: '大学留学サポート', 
-      description: '海外大学への進学をトータルサポート。',
+      title: '高校・大学留学', 
+      description: '海外の高校・大学への留学をトータルサポート。',
       image: '/images/university-support.jpg',
       link: '/university-support'
     },
