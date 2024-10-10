@@ -16,7 +16,7 @@ const Header = () => {
       </Link>
       <nav className="hidden md:flex space-x-6">
         <Link to="/#about" className="text-gray-600 hover:text-gray-900">私たちについて</Link>
-        <Link to="/#programs" className="text-gray-600 hover:text-gray-900">プログラム</Link>
+        <Link to="/#programs" className="text-gray-600 hover:text-gray-900">留学のプラン</Link>
         <Link to="/#reasons" className="text-gray-600 hover:text-gray-900">選ばれる理由</Link>
         <Link to="/#faq" className="text-gray-600 hover:text-gray-900">よくある質問</Link>
         <Link to="/#countries" className="text-gray-600 hover:text-gray-900">国</Link>

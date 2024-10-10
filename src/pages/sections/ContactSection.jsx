@@ -29,13 +29,14 @@ export const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
         </div>
       </div>
       <div className="mb-4 space-y-2">
-        <Label>興味のあるプログラム</Label>
-        {['internship', 'workingholiday', 'university'].map((program) => (
+        <Label>ご相談内容</Label>
+        {['internship', 'workingholiday', 'university', 'other'].map((program) => (
           <div key={program} className="flex items-center space-x-2">
             <Checkbox id={program} />
             <Label htmlFor={program}>
               {program === 'internship' ? '海外インターンシップ' :
-               program === 'workingholiday' ? 'ワーキングホリデー' : '大学進学'}
+               program === 'workingholiday' ? 'ワーキングホリデー' :
+               program === 'university' ? '大学進学' : 'その他'}
             </Label>
           </div>
         ))}

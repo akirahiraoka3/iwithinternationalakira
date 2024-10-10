@@ -26,7 +26,7 @@ export const ProgramsSection = () => {
 
   return (
     <section id="programs" className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold mb-8 text-center">プログラム</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">留学のプラン</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {programs.map((program, index) => (
           <Link to={program.link} key={index}>
