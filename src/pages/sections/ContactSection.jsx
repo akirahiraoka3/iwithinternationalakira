@@ -30,13 +30,13 @@ export const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
       </div>
       <div className="mb-4 space-y-2">
         <Label>ご相談内容</Label>
-        {['internship', 'workingholiday', 'university', 'other'].map((program) => (
+        {['internship', 'workingholiday_language', 'university', 'other'].map((program) => (
           <div key={program} className="flex items-center space-x-2">
             <Checkbox id={program} />
             <Label htmlFor={program}>
               {program === 'internship' ? '海外インターンシップ' :
-               program === 'workingholiday' ? 'ワーキングホリデー' :
-               program === 'university' ? '大学進学' : 'その他'}
+               program === 'workingholiday_language' ? 'ワーキングホリデー・語学留学' :
+               program === 'university' ? '高校・大学への留学' : 'その他'}
             </Label>
           </div>
         ))}

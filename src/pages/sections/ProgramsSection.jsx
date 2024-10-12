@@ -11,7 +11,7 @@ export const ProgramsSection = () => {
       link: '/internship'
     },
     { 
-      title: '語学留学', 
+      title: 'ワーキングホリデー・語学留学', 
       description: '現地の文化を体験しながら語学力を向上。',
       image: '/images/language-study.jpg',
       link: '/language-study'
