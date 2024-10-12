@@ -8,6 +8,7 @@ import Programs from "./pages/Programs";
 import Internship from "./pages/Internship";
 import LanguageStudy from "./pages/LanguageStudy";
 import UniversitySupport from "./pages/UniversitySupport";
+import OverseasInternship from "./pages/OverseasInternship";
 
 const queryClient = new QueryClient();
 
@@ -38,7 +39,7 @@ const App = () => (
             <Route key={to} path={to} element={page} />
           ))}
           <Route path="/programs" element={<Programs />} />
-          <Route path="/internship" element={<Internship />} />
+          <Route path="/internship" element={<OverseasInternship />} />
           <Route path="/language-study" element={<LanguageStudy />} />
           <Route path="/university-support" element={<UniversitySupport />} />
         </Routes>
