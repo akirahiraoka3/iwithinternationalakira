@@ -5,10 +5,9 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { navItems } from "./nav-items";
 import Programs from "./pages/Programs";
-import Internship from "./pages/Internship";
+import OverseasInternship from "./pages/OverseasInternship";
 import LanguageStudy from "./pages/LanguageStudy";
 import UniversitySupport from "./pages/UniversitySupport";
-import OverseasInternship from "./pages/OverseasInternship";
 
 const queryClient = new QueryClient();
 
