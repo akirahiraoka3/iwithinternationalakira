@@ -6,7 +6,6 @@ import { HeroSection } from './sections/HeroSection';
 import { AboutSection } from './sections/AboutSection';
 import { ProgramsSection } from './sections/ProgramsSection';
 import { ReasonsSection } from './sections/ReasonsSection';
-import { CountriesSection } from './sections/CountriesSection';
 import { PurposesSection } from './sections/PurposesSection';
 import { TestimonialsSection } from './sections/TestimonialsSection';
 import { ContactSection } from './sections/ContactSection';
@@ -27,7 +26,6 @@ const Index = () => {
       <ProgramsSection />
       <ReasonsSection />
       <FAQSection />
-      <CountriesSection />
       <PurposesSection />
       <TestimonialsSection />
       <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
