@@ -8,6 +8,7 @@ import Programs from "./pages/Programs";
 import OverseasInternship from "./pages/OverseasInternship";
 import LanguageStudy from "./pages/LanguageStudy";
 import UniversitySupport from "./pages/UniversitySupport";
+import Countries from "./pages/Countries";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/internship" element={<OverseasInternship />} />
           <Route path="/language-study" element={<LanguageStudy />} />
           <Route path="/university-support" element={<UniversitySupport />} />
+          <Route path="/countries" element={<Countries />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
