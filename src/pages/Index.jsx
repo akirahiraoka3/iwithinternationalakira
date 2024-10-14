@@ -8,7 +8,6 @@ import { ReasonsSection } from './sections/ReasonsSection';
 import { PurposesSection } from './sections/PurposesSection';
 import { TestimonialsSection } from './sections/TestimonialsSection';
 import { ContactSection } from './sections/ContactSection';
-import { AppleStyleSection } from './sections/AppleStyleSection';
 
 const Index = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -21,8 +20,11 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <AppleStyleSection />
+      <HeroSection scrollToContact={scrollToContact} />
+      <AboutSection />
+      <ProgramsSection />
       <ReasonsSection />
+      <PurposesSection />
       <TestimonialsSection />
       <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
       <Footer />
