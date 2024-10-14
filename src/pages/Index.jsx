@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import FAQSection from '../components/FAQSection';
 import { HeroSection } from './sections/HeroSection';
 import { AboutSection } from './sections/AboutSection';
 import { ProgramsSection } from './sections/ProgramsSection';
@@ -25,7 +24,6 @@ const Index = () => {
       <AboutSection />
       <ProgramsSection />
       <ReasonsSection />
-      <FAQSection />
       <PurposesSection />
       <TestimonialsSection />
       <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
