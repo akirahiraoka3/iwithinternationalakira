@@ -1,14 +1,14 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Clock, UserCheck, HeadphonesIcon, GraduationCap, Globe, Zap } from 'lucide-react';
+import { Clock, UserCheck, HeadphonesIcon, GraduationCap, Briefcase, Zap } from 'lucide-react';
 
 export const ReasonsSection = () => {
   const reasons = [
     { icon: <Clock className="w-6 h-6" />, title: '豊富な経験', description: '10年以上の留学サポート実績' },
-    { icon: <UserCheck className="w-6 h-6" />, title: 'カスタマイズされたプラン', description: '一人ひとりのニーズに合わせたプログラム' },
+    { icon: <UserCheck className="w-6 h-6" />, title: '業界最安値・手数料０円', description: 'コストを抑えた留学プラン' },
     { icon: <HeadphonesIcon className="w-6 h-6" />, title: '24時間サポート', description: '留学中も安心のサポート体制' },
-    { icon: <GraduationCap className="w-6 h-6" />, title: '質の高い教育機関', description: '世界トップクラスの提携校' },
-    { icon: <Globe className="w-6 h-6" />, title: 'グローバルネットワーク', description: '世界中の留学生とのつながり' },
+    { icon: <GraduationCap className="w-6 h-6" />, title: '帰国後の就職サポート', description: '留学後のキャリアもサポート' },
+    { icon: <Briefcase className="w-6 h-6" />, title: '渡航後のお仕事・就職サポート', description: '現地での就職活動をサポート' },
     { icon: <Zap className="w-6 h-6" />, title: '迅速な手続き', description: 'スムーズな留学準備をサポート' },
   ];
 
