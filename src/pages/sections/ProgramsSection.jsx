@@ -11,13 +11,13 @@ export const ProgramsSection = () => {
       link: '/internship'
     },
     { 
-      title: '高校・大学への留学', 
+      title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
       image: '/images/university-support.jpg',
       link: '/university-support'
     },
     { 
-      title: 'ワーキングホリデー・語学留学', 
+      title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
       image: '/images/language-study.jpg',
       link: '/language-study'
