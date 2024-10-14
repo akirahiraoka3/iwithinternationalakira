@@ -17,8 +17,8 @@ const Header = () => {
       title: '留学のプラン',
       items: [
         { name: '海外インターンシップ', href: '/internship' },
-        { name: 'ワーキングホリデー・語学留学', href: '/language-study' },
-        { name: '高校・大学への留学', href: '/university-support' },
+        { name: '短期・長期留学', href: '/language-study' },
+        { name: 'ワーキングホリデー', href: '/university-support' },
       ],
     },
     {
