@@ -4,8 +4,8 @@ import Footer from '../components/Footer';
 import { HeroSection } from './sections/HeroSection';
 import { AboutSection } from './sections/AboutSection';
 import { ProgramsSection } from './sections/ProgramsSection';
-import { ReasonsSection } from './sections/ReasonsSection';
 import { PurposesSection } from './sections/PurposesSection';
+import { ReasonsSection } from './sections/ReasonsSection';
 import { TestimonialsSection } from './sections/TestimonialsSection';
 import { ContactSection } from './sections/ContactSection';
 
@@ -23,8 +23,8 @@ const Index = () => {
       <HeroSection scrollToContact={scrollToContact} />
       <AboutSection />
       <ProgramsSection />
-      <ReasonsSection />
       <PurposesSection />
+      <ReasonsSection />
       <TestimonialsSection />
       <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
       <Footer />
