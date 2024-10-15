@@ -7,19 +7,19 @@ export const ProgramsSection = () => {
     { 
       title: '海外インターンシップ', 
       description: '実践的なスキルを海外で身につけましょう。',
-      image: '/images/internship.jpg',
+      image: 'https://placehold.co/600x400?text=Internship',
       link: '/internship'
     },
     { 
       title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
-      image: '/images/university-support.jpg',
+      image: 'https://placehold.co/600x400?text=Study+Abroad',
       link: '/university-support'
     },
     { 
       title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
-      image: '/images/language-study.jpg',
+      image: 'https://placehold.co/600x400?text=Working+Holiday',
       link: '/language-study'
     },
   ];
