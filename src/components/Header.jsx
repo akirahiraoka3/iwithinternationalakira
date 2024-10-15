@@ -50,30 +50,6 @@ const Header = () => {
         { name: '滞在先について', href: '/faq#accommodation' },
       ],
     },
-    {
-      title: '国',
-      items: [
-        { name: 'アメリカ', href: '/countries#usa' },
-        { name: 'イギリス', href: '/countries#uk' },
-        { name: 'オーストラリア', href: '/countries#australia' },
-      ],
-    },
-    {
-      title: '留学の目的',
-      items: [
-        { name: '語学力向上', href: '/#purposes' },
-        { name: 'キャリアアップ', href: '/#purposes' },
-        { name: '異文化理解', href: '/#purposes' },
-      ],
-    },
-    {
-      title: '体験談',
-      items: [
-        { name: '学生の声', href: '/#testimonials' },
-        { name: '卒業生の声', href: '/#testimonials' },
-        { name: '保護者の声', href: '/#testimonials' },
-      ],
-    },
   ];
 
   return (
