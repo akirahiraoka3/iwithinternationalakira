@@ -87,7 +87,7 @@ const Header = () => {
             <NavigationMenuItem key={item.title}>
               <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-full gap-3 p-4 md:grid-cols-2 lg:grid-cols-3">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   {item.items.map((subItem) => (
                     <li key={subItem.name}>
                       <NavigationMenuLink asChild>
