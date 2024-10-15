@@ -34,9 +34,12 @@ const Header = () => {
     {
       title: '選ばれる理由',
       items: [
-        { name: '豊富な経験', href: '/#reasons' },
-        { name: 'カスタマイズされたプラン', href: '/#reasons' },
-        { name: '24時間サポート', href: '/#reasons' },
+        { name: '豊富な経験', href: '/reasons#experience' },
+        { name: '業界最安値・手数料０円', href: '/reasons#cost' },
+        { name: '24時間サポート', href: '/reasons#support' },
+        { name: '帰国後の就職サポート', href: '/reasons#career' },
+        { name: '渡航後のお仕事・就職サポート', href: '/reasons#overseas-career' },
+        { name: '迅速な手続き', href: '/reasons#quick-process' },
       ],
     },
     {

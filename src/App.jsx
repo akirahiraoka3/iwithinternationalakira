@@ -11,6 +11,7 @@ import UniversitySupport from "./pages/UniversitySupport";
 import Countries from "./pages/Countries";
 import FAQ from "./pages/FAQ";
 import LearnAboutStudyAbroad from "./pages/LearnAboutStudyAbroad";
+import Reasons from "./pages/Reasons";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/countries" element={<Countries />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/learn-about-study-abroad" element={<LearnAboutStudyAbroad />} />
+          <Route path="/reasons" element={<Reasons />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
