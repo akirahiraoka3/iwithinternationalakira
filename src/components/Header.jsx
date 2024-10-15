@@ -22,6 +22,16 @@ const Header = () => {
       ],
     },
     {
+      title: '留学を知る',
+      items: [
+        { name: 'ワーキングホリデーとは？', href: '/learn-about-study-abroad#working-holiday' },
+        { name: '必要な書類は？', href: '/learn-about-study-abroad#required-documents' },
+        { name: '長期留学って？', href: '/learn-about-study-abroad#long-term-study' },
+        { name: '短期留学って？', href: '/learn-about-study-abroad#short-term-study' },
+        { name: 'お値段・費用は？', href: '/learn-about-study-abroad#costs' },
+      ],
+    },
+    {
       title: '選ばれる理由',
       items: [
         { name: '豊富な経験', href: '/#reasons' },
