@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const Header = () => {
   const menuItems = [
     {
-      title: '留学のプラン',
+      title: '留学プラン',
       items: [
         { name: '海外インターンシップ', href: '/internship' },
         { name: '短期・長期留学', href: '/language-study' },
@@ -65,19 +65,22 @@ const Header = () => {
               <NavigationMenuContent>
                 <div className="w-screen bg-white shadow-lg">
                   <div className="container mx-auto py-4 px-4">
-                    <div className="grid grid-cols-3 gap-4">
-                      {item.items.map((subItem) => (
-                        <NavigationMenuLink asChild key={subItem.name}>
-                          <Link
-                            to={subItem.href}
-                            className={cn(
-                              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            )}
-                          >
-                            <div className="text-sm font-medium leading-none">{subItem.name}</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      ))}
+                    <div className="flex justify-center">
+                      <div className="grid grid-cols-3 gap-4">
+                        {item.items.map((subItem) => (
+                          <NavigationMenuLink asChild key={subItem.name}>
+                            <Link
+                              to={subItem.href}
+                              className={cn(
+                                "block select-none rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                "text-lg font-medium"
+                              )}
+                            >
+                              {subItem.name}
+                            </Link>
+                          </NavigationMenuLink>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
