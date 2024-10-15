@@ -53,7 +53,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="container mx-auto px-4 py-4 flex justify-between items-center relative z-50">
+    <header className="container mx-auto px-4 py-4 flex justify-between items-center">
       <Link to="/" className="text-2xl font-bold text-gray-900 hover:text-gray-700 transition-colors">
         IWITH International
       </Link>
@@ -63,18 +63,18 @@ const Header = () => {
             <NavigationMenuItem key={item.title}>
               <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="w-screen bg-white shadow-lg absolute left-0 top-full">
-                  <div className="container mx-auto py-8 px-4">
-                    <div className="grid grid-cols-3 gap-8">
+                <div className="w-screen bg-white shadow-lg">
+                  <div className="container mx-auto py-4 px-4">
+                    <div className="grid grid-cols-3 gap-4">
                       {item.items.map((subItem) => (
                         <NavigationMenuLink asChild key={subItem.name}>
                           <Link
                             to={subItem.href}
                             className={cn(
-                              "block select-none space-y-1 rounded-md p-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground text-lg"
+                              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             )}
                           >
-                            <div className="text-center font-medium">{subItem.name}</div>
+                            <div className="text-sm font-medium leading-none">{subItem.name}</div>
                           </Link>
                         </NavigationMenuLink>
                       ))}
