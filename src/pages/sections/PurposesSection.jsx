@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from 'next/image';
 
 export const PurposesSection = () => (
   <section id="purposes" className="container mx-auto px-4 py-16">
@@ -13,11 +12,9 @@ export const PurposesSection = () => (
       ].map((purpose, index) => (
         <Card key={index} className="transition-transform duration-300 hover:scale-105">
           <CardHeader>
-            <Image
+            <img
               src={purpose.image}
               alt={purpose.title}
-              width={300}
-              height={200}
               className="w-full h-48 object-cover rounded-t-lg"
             />
             <CardTitle className="mt-4">{purpose.title}</CardTitle>
