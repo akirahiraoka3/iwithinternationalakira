@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -56,6 +56,16 @@ export const TestimonialsSection = () => {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex));
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === maxIndex ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [maxIndex]);
 
   return (
     <section id="testimonials" className="bg-gray-100 py-16">
