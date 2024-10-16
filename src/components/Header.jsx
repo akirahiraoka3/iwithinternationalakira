@@ -31,6 +31,7 @@ const Header = () => {
         { name: 'お値段・費用は？', href: '/learn-about-study-abroad#costs', description: '留学にかかる費用の詳細と資金計画' },
         { name: '高校留学って？', href: '/learn-about-study-abroad#high-school', description: '高校生向け留学プログラムの特徴と魅力' },
         { name: '大学留学って？', href: '/learn-about-study-abroad#university', description: '大学生向け留学プログラムの概要と利点' },
+        { name: '海外インターンシップ留学って？', href: '/learn-about-study-abroad#overseas-internship', description: '海外インターンシップ留学の特徴と利点' },
       ],
     },
     {
