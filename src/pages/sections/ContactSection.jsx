@@ -28,7 +28,7 @@ export const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
           <Label htmlFor="freeConsultation">無料相談を予約する</Label>
         </div>
       </div>
-      <div className="mb-4 space-y-2">
+      <div className="mb-4 space-y-2 mt-6">
         <Label>ご相談内容</Label>
         {['internship', 'workingholiday_language', 'university', 'other'].map((program) => (
           <div key={program} className="flex items-center space-x-2">
@@ -41,7 +41,7 @@ export const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
           </div>
         ))}
       </div>
-      <div className="mb-4">
+      <div className="mb-4 mt-6">
         <Label htmlFor="message">ご質問・ご相談</Label>
         <Textarea id="message" placeholder="ご質問・ご相談内容をご記入ください" className="w-full" rows={4} />
       </div>
