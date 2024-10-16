@@ -66,13 +66,15 @@ const Header = () => {
             <NavigationMenuItem key={item.title}>
               <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  {item.items.map((subItem) => (
-                    <ListItem key={subItem.name} href={subItem.href} title={subItem.name}>
-                      {subItem.description}
-                    </ListItem>
-                  ))}
-                </ul>
+                <div className="p-4 w-[600px] lg:w-[700px]"> {/* 枠組みを大きくするためのコンテナ */}
+                  <ul className="grid w-full gap-3 p-4 md:grid-cols-2">
+                    {item.items.map((subItem) => (
+                      <ListItem key={subItem.name} href={subItem.href} title={subItem.name}>
+                        {subItem.description}
+                      </ListItem>
+                    ))}
+                  </ul>
+                </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
           ))}
