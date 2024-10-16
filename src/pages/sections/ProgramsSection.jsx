@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const ProgramsSection = () => {
   const programs = [
@@ -25,28 +24,30 @@ export const ProgramsSection = () => {
   ];
 
   return (
-    <section id="programs" className="container mx-auto px-4 py-16">
-      <h2 className="text-3xl font-bold mb-8 text-center">留学のプラン</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {programs.map((program, index) => (
-          <Link to={program.link} key={index}>
-            <Card className="transition-transform duration-300 hover:scale-105 h-full flex flex-col">
-              <CardHeader>
-                <CardTitle>{program.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow flex flex-col justify-between">
+    <section id="programs" className="py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-12 text-center">留学のプラン</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {programs.map((program, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src={program.image}
+                alt={program.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
                 <p className="text-gray-600 mb-4">{program.description}</p>
-                <div className="h-48 relative">
-                  <img
-                    src={program.image}
-                    alt={program.title}
-                    className="w-full h-full object-cover rounded"
-                  />
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
-        ))}
+                <Link 
+                  to={program.link} 
+                  className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
+                >
+                  詳細を見る
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
