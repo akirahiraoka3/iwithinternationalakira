@@ -29,6 +29,8 @@ const Header = () => {
         { name: '長期留学って？', href: '/learn-about-study-abroad#long-term-study', description: '長期留学の特徴と利点' },
         { name: '短期留学って？', href: '/learn-about-study-abroad#short-term-study', description: '短期留学の魅力と効果的な活用法' },
         { name: 'お値段・費用は？', href: '/learn-about-study-abroad#costs', description: '留学にかかる費用の詳細と資金計画' },
+        { name: '高校留学って？', href: '/learn-about-study-abroad#high-school', description: '高校生向け留学プログラムの特徴と魅力' },
+        { name: '大学留学って？', href: '/learn-about-study-abroad#university', description: '大学生向け留学プログラムの概要と利点' },
       ],
     },
     {
