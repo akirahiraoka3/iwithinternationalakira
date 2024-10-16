@@ -42,9 +42,10 @@ export const ContactSection = ({ contactRef, isChecked, setIsChecked }) => (
         ))}
       </div>
       <div className="mb-4">
-        <Textarea placeholder="メッセージ" className="w-full" rows={4} />
+        <Label htmlFor="message">ご質問・ご相談</Label>
+        <Textarea id="message" placeholder="ご質問・ご相談内容をご記入ください" className="w-full" rows={4} />
       </div>
-      <Button type="submit" className="w-full">送信</Button>
+      <Button type="submit">送信</Button>
     </form>
   </section>
 );
