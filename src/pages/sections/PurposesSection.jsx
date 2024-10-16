@@ -12,15 +12,15 @@ export const PurposesSection = () => (
       ].map((purpose, index) => (
         <Card key={index} className="transition-transform duration-300 hover:scale-105">
           <CardHeader>
-            <img
-              src={purpose.image}
-              alt={purpose.title}
-              className="w-full h-48 object-cover rounded-t-lg"
-            />
             <CardTitle className="mt-4">{purpose.title}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="text-gray-600">{purpose.description}</p>
+            <p className="text-gray-600 mb-4">{purpose.description}</p>
+            <img
+              src={purpose.image}
+              alt={purpose.title}
+              className="w-full h-48 object-cover rounded-lg"
+            />
           </CardContent>
         </Card>
       ))}
