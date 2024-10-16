@@ -66,19 +66,14 @@ const Header = () => {
             <NavigationMenuItem key={item.title}>
               <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="flex">
-                  <div className="p-4 w-[300px] lg:w-[350px]"> {/* 左側の枠組みを大きくするためのコンテナ */}
-                    {/* この空のdivは左側のスペースを確保します */}
-                  </div>
-                  <div className="p-4 w-[300px] lg:w-[350px]"> {/* 右側のコンテンツ用コンテナ */}
-                    <ul className="grid w-full gap-3 p-4 md:grid-cols-2">
-                      {item.items.map((subItem) => (
-                        <ListItem key={subItem.name} href={subItem.href} title={subItem.name}>
-                          {subItem.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="p-4 w-[600px] lg:w-[700px]"> {/* 枠組みを大きくするためのコンテナ */}
+                  <ul className="grid w-full gap-3 p-4 md:grid-cols-2">
+                    {item.items.map((subItem) => (
+                      <ListItem key={subItem.name} href={subItem.href} title={subItem.name}>
+                        {subItem.description}
+                      </ListItem>
+                    ))}
+                  </ul>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
