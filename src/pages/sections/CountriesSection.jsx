@@ -33,12 +33,8 @@ export const CountriesSection = () => {
                     <CardContent className="p-4 h-full flex flex-col">
                       <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
                       <p className="text-sm text-gray-600 mb-4 flex-grow">{city.description}</p>
-                      <div className="h-[50%] relative">
-                        <img
-                          src={`/images/${city.name.toLowerCase()}.jpg`}
-                          alt={city.name}
-                          className="w-full h-full object-cover rounded"
-                        />
+                      <div className="h-[50%] relative bg-gray-200 rounded-lg flex items-center justify-center">
+                        <span className="text-gray-500 text-lg font-semibold">{city.name}</span>
                       </div>
                     </CardContent>
                   </Card>
