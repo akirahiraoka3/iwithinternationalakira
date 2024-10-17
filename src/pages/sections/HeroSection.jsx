@@ -6,7 +6,7 @@ export const HeroSection = ({ scrollToContact }) => (
     {/* Background image */}
     <div 
       className="absolute inset-0 bg-cover bg-center z-0" 
-      style={{backgroundImage: "url('/placeholder.svg')"}}
+      style={{backgroundImage: "url('/hero-background.jpg')"}}
     ></div>
     
     {/* Content overlay */}
