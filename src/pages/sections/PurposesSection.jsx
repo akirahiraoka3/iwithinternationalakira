@@ -16,11 +16,9 @@ export const PurposesSection = () => (
           </CardHeader>
           <CardContent>
             <p className="text-gray-600 mb-4">{purpose.description}</p>
-            <img
-              src="/placeholder.svg"
-              alt={purpose.title}
-              className="w-full h-48 object-cover rounded-lg mx-auto"
-            />
+            <div className="w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500 text-lg font-semibold">{purpose.title}</span>
+            </div>
           </CardContent>
         </Card>
       ))}
