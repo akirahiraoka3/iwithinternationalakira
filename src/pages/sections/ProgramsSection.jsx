@@ -6,16 +6,19 @@ export const ProgramsSection = () => {
     { 
       title: '海外インターンシップ', 
       description: '実践的なスキルを海外で身につけましょう。',
+      image: '/images/internship.jpg',
       link: '/internship'
     },
     { 
       title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
+      image: '/images/study-abroad.jpg',
       link: '/university-support'
     },
     { 
       title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
+      image: '/images/working-holiday.jpg',
       link: '/language-study'
     },
   ];
@@ -31,9 +34,7 @@ export const ProgramsSection = () => {
               to={program.link} 
               className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
             >
-              <div className="h-48 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-500">{program.title} イメージ</span>
-              </div>
+              <img src={program.image} alt={program.title} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
                 <p className="text-gray-600 mb-4 h-20">
