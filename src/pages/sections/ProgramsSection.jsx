@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const ProgramsSection = () => {
@@ -6,19 +6,24 @@ export const ProgramsSection = () => {
     { 
       title: '海外インターンシップ', 
       description: '実践的なスキルを海外で身につけましょう。',
+      hoverDescription: 'グローバルな環境で実務経験を積み、キャリアアップを目指しましょう。',
       link: '/internship'
     },
     { 
       title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
+      hoverDescription: '数週間から数年まで、あなたに合った留学プランで語学力と異文化理解を深めましょう。',
       link: '/university-support'
     },
     { 
       title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
+      hoverDescription: '海外で働きながら生活を楽しみ、自己成長と冒険を体験しましょう。',
       link: '/language-study'
     },
   ];
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <section id="programs" className="py-20">
@@ -30,13 +35,17 @@ export const ProgramsSection = () => {
               key={index} 
               to={program.link} 
               className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="h-48 bg-gray-200 flex items-center justify-center">
                 <span className="text-gray-500">{program.title} イメージ</span>
               </div>
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
-                <p className="text-gray-600 mb-4">{program.description}</p>
+                <p className="text-gray-600 mb-4 h-20">
+                  {hoveredIndex === index ? program.hoverDescription : program.description}
+                </p>
                 <span 
                   className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
                 >
