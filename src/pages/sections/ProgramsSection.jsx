@@ -29,23 +29,28 @@ export const ProgramsSection = () => {
         <h2 className="text-3xl font-bold mb-12 text-center">留学のプラン</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img
-                src={program.image}
-                alt={program.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
-                <p className="text-gray-600 mb-4">{program.description}</p>
-                <Link 
-                  to={program.link} 
-                  className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
-                >
-                  もっと詳しく
-                </Link>
+            <Link 
+              key={index} 
+              to={program.link} 
+              className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105"
+            >
+              <div>
+                <img
+                  src={program.image}
+                  alt={program.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
+                  <p className="text-gray-600 mb-4">{program.description}</p>
+                  <span 
+                    className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
+                  >
+                    もっと詳しく
+                  </span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
