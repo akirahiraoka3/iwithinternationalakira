@@ -6,19 +6,19 @@ export const ProgramsSection = () => {
     { 
       title: '海外インターンシップ', 
       description: '実践的なスキルを海外で身につけましょう。',
-      image: '/images/internship.jpg',
+      image: 'https://placehold.co/600x400?text=Internship',
       link: '/internship'
     },
     { 
       title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
-      image: '/images/study-abroad.jpg',
+      image: 'https://placehold.co/600x400?text=Study+Abroad',
       link: '/university-support'
     },
     { 
       title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
-      image: '/images/working-holiday.jpg',
+      image: 'https://placehold.co/600x400?text=Working+Holiday',
       link: '/language-study'
     },
   ];
@@ -29,24 +29,23 @@ export const ProgramsSection = () => {
         <h2 className="text-3xl font-bold mb-12 text-center">留学のプラン</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
-            <Link 
-              key={index} 
-              to={program.link} 
-              className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-105"
-            >
-              <img src={program.image} alt={program.title} className="w-full h-48 object-cover" />
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src={program.image}
+                alt={program.title}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
-                <p className="text-gray-600 mb-4 h-20">
-                  {program.description}
-                </p>
-                <span 
+                <p className="text-gray-600 mb-4">{program.description}</p>
+                <Link 
+                  to={program.link} 
                   className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
                 >
                   もっと詳しく
-                </span>
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>
