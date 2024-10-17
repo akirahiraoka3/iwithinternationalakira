@@ -41,7 +41,7 @@ export const ProgramsSection = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2 text-gray-900">{program.title}</h3>
                   <p className="text-gray-600 mb-4">{program.description}</p>
                   <span 
                     className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
