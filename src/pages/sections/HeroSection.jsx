@@ -10,11 +10,7 @@ export const HeroSection = ({ scrollToContact }) => (
       <Button variant="outline" size="lg">詳細を見る</Button>
     </div>
     <div className="md:w-1/2">
-      <img 
-        src="/images/hero-image.jpg" 
-        alt="じぶん史上、最高の年へ" 
-        className="w-full h-auto rounded-lg shadow-lg mx-auto object-cover"
-      />
+      <img src="/placeholder.svg" alt="IWITH International" className="w-full h-auto" />
     </div>
   </section>
 );
