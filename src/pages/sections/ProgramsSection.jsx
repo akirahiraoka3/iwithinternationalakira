@@ -6,19 +6,16 @@ export const ProgramsSection = () => {
     { 
       title: '海外インターンシップ', 
       description: '実践的なスキルを海外で身につけましょう。',
-      image: 'https://placehold.co/600x400?text=Internship',
       link: '/internship'
     },
     { 
       title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
-      image: 'https://placehold.co/600x400?text=Study+Abroad',
       link: '/university-support'
     },
     { 
       title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
-      image: 'https://placehold.co/600x400?text=Working+Holiday',
       link: '/language-study'
     },
   ];
@@ -30,11 +27,9 @@ export const ProgramsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img
-                src={program.image}
-                alt={program.title}
-                className="w-full h-48 object-cover"
-              />
+              <div className="h-48 bg-gray-200 flex items-center justify-center">
+                <span className="text-gray-500">{program.title} イメージ</span>
+              </div>
               <div className="p-4">
                 <h3 className="text-lg font-semibold mb-2">{program.title}</h3>
                 <p className="text-gray-600 mb-4">{program.description}</p>
