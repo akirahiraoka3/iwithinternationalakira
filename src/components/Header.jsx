@@ -29,7 +29,7 @@ const Header = () => {
         { name: '高校留学って？', href: '/high-school-study', description: '高校生向け留学プログラムの特徴と魅力' },
         { name: '大学留学って？', href: '/university-study', description: '大学生向け留学プログラムの概要と利点' },
         { name: 'ワーキングホリデーとは？', href: '/working-holiday', description: 'ワーキングホリデーの基本情報と魅力' },
-        { name: '海外インターンシップ留学って？', href: '/overseas-internship', description: '海外インターンシップ留学の特徴と利点' },
+        { name: 'インターンシップ留学って？', href: '/overseas-internship', description: '海外インターンシップ留学の特徴と利点' },
         { name: '必要な書類は？', href: '/required-documents', description: '留学に必要な書類の準備ガイド' },
         { name: 'お値段・費用は？', href: '/costs-and-fees', description: '留学にかかる費用の詳細と資金計画' },
       ],
