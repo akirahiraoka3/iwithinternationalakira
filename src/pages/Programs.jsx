@@ -30,7 +30,7 @@ const Programs = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-center">留学のプラン</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">渡航のプラン</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {programs.map((program, index) => (
             <Link to={program.link} key={index}>
