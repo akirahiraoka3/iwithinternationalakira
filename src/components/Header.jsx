@@ -35,17 +35,6 @@ const Header = () => {
       ],
     },
     {
-      title: '選ばれる理由',
-      items: [
-        { name: '豊富な経験', href: '/reasons#experience', description: '10年以上の留学サポート実績' },
-        { name: '業界最安値・手数料０円', href: '/reasons#cost', description: 'コストを抑えた留学プランの提供' },
-        { name: '24時間サポート', href: '/reasons#support', description: '留学中も安心のサポート体制' },
-        { name: '帰国後の就職サポート', href: '/reasons#career', description: 'グローバルな経験を活かした就職支援' },
-        { name: '渡航後のお仕事・就職サポート', href: '/reasons#overseas-career', description: '海外でのキャリアスタートを応援' },
-        { name: '迅速な手続き', href: '/reasons#quick-process', description: 'スムーズな留学準備をサポート' },
-      ],
-    },
-    {
       title: 'よくある質問',
       items: [
         { name: '費用について', href: '/faq#cost', description: '留学費用の詳細と支払い方法' },
