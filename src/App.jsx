@@ -12,6 +12,14 @@ import Countries from "./pages/Countries";
 import FAQ from "./pages/FAQ";
 import LearnAboutStudyAbroad from "./pages/LearnAboutStudyAbroad";
 import Reasons from "./pages/Reasons";
+import WorkingHoliday from "./pages/WorkingHoliday";
+import ShortTermStudy from "./pages/ShortTermStudy";
+import LongTermStudy from "./pages/LongTermStudy";
+import HighSchoolStudy from "./pages/HighSchoolStudy";
+import UniversityStudy from "./pages/UniversityStudy";
+import RequiredDocuments from "./pages/RequiredDocuments";
+import CostsAndFees from "./pages/CostsAndFees";
+import OverseasInternshipStudy from "./pages/OverseasInternshipStudy";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +57,14 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/learn-about-study-abroad" element={<LearnAboutStudyAbroad />} />
           <Route path="/reasons" element={<Reasons />} />
+          <Route path="/working-holiday" element={<WorkingHoliday />} />
+          <Route path="/short-term-study" element={<ShortTermStudy />} />
+          <Route path="/long-term-study" element={<LongTermStudy />} />
+          <Route path="/high-school-study" element={<HighSchoolStudy />} />
+          <Route path="/university-study" element={<UniversityStudy />} />
+          <Route path="/required-documents" element={<RequiredDocuments />} />
+          <Route path="/costs-and-fees" element={<CostsAndFees />} />
+          <Route path="/overseas-internship-study" element={<OverseasInternshipStudy />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
