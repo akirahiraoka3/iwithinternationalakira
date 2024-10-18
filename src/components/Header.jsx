@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const Header = () => {
   const menuItems = [
     {
-      title: '留学のプラン',
+      title: '渡航のプラン',
       items: [
         { name: '海外インターンシップ', href: '/internship', description: '実践的なスキルを身につけながら、グローバルな環境で働く経験を積む' },
         { name: '短期・長期留学', href: '/language-study', description: '語学力向上と異文化体験を通じて、グローバルな視野を広げる' },
