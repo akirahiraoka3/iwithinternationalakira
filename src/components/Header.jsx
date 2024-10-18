@@ -24,13 +24,13 @@ const Header = () => {
     {
       title: '留学を知る',
       items: [
-        { name: 'ワーキングホリデーとは？', href: '/learn-about-study-abroad#working-holiday', description: 'ワーキングホリデーの基本情報と魅力' },
-        { name: '必要な書類は？', href: '/learn-about-study-abroad#required-documents', description: '留学に必要な書類の準備ガイド' },
-        { name: '長期留学って？', href: '/learn-about-study-abroad#long-term-study', description: '長期留学の特徴と利点' },
         { name: '短期留学って？', href: '/learn-about-study-abroad#short-term-study', description: '短期留学の魅力と効果的な活用法' },
-        { name: 'お値段・費用は？', href: '/learn-about-study-abroad#costs', description: '留学にかかる費用の詳細と資金計画' },
+        { name: '長期留学って？', href: '/learn-about-study-abroad#long-term-study', description: '長期留学の特徴と利点' },
         { name: '高校留学って？', href: '/learn-about-study-abroad#high-school', description: '高校生向け留学プログラムの特徴と魅力' },
         { name: '大学留学って？', href: '/learn-about-study-abroad#university', description: '大学生向け留学プログラムの概要と利点' },
+        { name: 'ワーキングホリデーとは？', href: '/learn-about-study-abroad#working-holiday', description: 'ワーキングホリデーの基本情報と魅力' },
+        { name: '必要な書類は？', href: '/learn-about-study-abroad#required-documents', description: '留学に必要な書類の準備ガイド' },
+        { name: 'お値段・費用は？', href: '/learn-about-study-abroad#costs', description: '留学にかかる費用の詳細と資金計画' },
         { name: '海外インターンシップ留学って？', href: '/learn-about-study-abroad#overseas-internship', description: '海外インターンシップ留学の特徴と利点' },
       ],
     },
@@ -66,7 +66,7 @@ const Header = () => {
             <NavigationMenuItem key={item.title}>
               <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="p-4 w-[600px] lg:w-[700px]"> {/* 枠組みを大きくするためのコンテナ */}
+                <div className="p-4 w-[600px] lg:w-[700px]">
                   <ul className="grid w-full gap-3 p-4 md:grid-cols-2">
                     {item.items.map((subItem) => (
                       <ListItem key={subItem.name} href={subItem.href} title={subItem.name}>
