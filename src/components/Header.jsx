@@ -109,7 +109,3 @@ const ListItem = React.forwardRef(({ className, title, children, ...props }, ref
 ListItem.displayName = "ListItem";
 
 export default Header;
-
-};
-
-export default Header;
