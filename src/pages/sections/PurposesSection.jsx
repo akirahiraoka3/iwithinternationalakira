@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 export const PurposesSection = () => (
   <section id="purposes" className="container mx-auto px-4 py-16">
     <h2 className="text-3xl font-bold mb-8 text-center">留学の目的</h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       {[
         { title: '語学力・異文化理解', description: 'ネイティブスピーカーとの日常会話で実践的な語学力を身につけ、多様な文化に触れる', image: '/placeholder.svg' },
         { title: 'キャリアアップ', description: '国際的な職場経験を通じて、グローバルなキャリアを築く', image: '/placeholder.svg' },
@@ -24,6 +26,13 @@ export const PurposesSection = () => (
           </CardContent>
         </Card>
       ))}
+    </div>
+    <div className="text-center">
+      <Link to="/programs">
+        <Button size="lg" className="bg-black text-white">
+          目的から選ぶ
+        </Button>
+      </Link>
     </div>
   </section>
 );
