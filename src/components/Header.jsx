@@ -30,7 +30,7 @@ const Header = () => {
         { name: '大学留学って？', href: '/university-study', description: '大学生向け留学プログラムの概要と利点' },
         { name: 'ワーキングホリデーとは？', href: '/working-holiday', description: 'ワーキングホリデーの基本情報と魅力' },
         { name: 'インターンシップ留学って？', href: '/overseas-internship', description: '海外インターンシップ留学の特徴と利点' },
-        { name: '必要な書類は？', href: '/required-documents', description: '留学に必要な書類の準備ガイド' },
+        { name: '今後の流れ・必要な書類は？', href: '/required-documents', description: '留学に必要な書類の準備ガイド' },
         { name: 'よくある質問', href: '/faq', description: '留学に関するよくある質問と回答' },
       ],
     },
