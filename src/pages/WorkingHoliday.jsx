@@ -65,23 +65,38 @@ const WorkingHoliday = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">ワーキングホリデーとは？</h1>
-        <p className="mb-4">
-          ワーキングホリデーは、協定を結んでいる国の若者が、滞在国の文化や生活様式を理解し、
-          国際親善を深めることを目的とした制度です。
-        </p>
-        <p className="mb-4">
-          主な特徴：
-        </p>
-        <ul className="list-disc list-inside mb-4">
-          <li>最長1年間、滞在国で働きながら休暇を楽しむことができる</li>
-          <li>語学学習と就労体験の両立が可能</li>
-          <li>滞在費用を現地で稼ぎながら長期滞在できる</li>
-          <li>年齢制限があり、通常18歳から30歳までが対象</li>
-        </ul>
-        <p className="mb-8">
-          ワーキングホリデーは、海外での生活を深く体験したい若者にとって魅力的な選択肢です。
-        </p>
+        <section className="mb-16">
+          <div className="relative h-64 md:h-96 mb-8">
+            <img
+              src="/images/working-holiday-hero.jpg"
+              alt="Working Holiday"
+              className="w-full h-full object-cover rounded-lg"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+              <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
+                WORKING HOLIDAY
+                <span className="block text-xl md:text-2xl mt-2">ワーキングホリデー</span>
+              </h1>
+            </div>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">WHAT</h2>
+            <h3 className="text-xl font-semibold mb-4 text-center">ワーキングホリデー（ワーホリ）とは？</h3>
+            <p className="mb-4">
+              2国間の協定に基づき、それぞれの国の青少年を相手国に受け入れて、その国の文化や生活を理解する機会を提供する制度です。
+              それぞれの国において、最長1年間（国によっては最長2年間）滞在して、滞在資金を補うための就労が認められています。
+            </p>
+            <ul className="list-disc list-inside mb-4 space-y-2">
+              <li>滞在期間中は、観光や語学学習だけでなく、就労することができます。</li>
+              <li>就労目的ではなく、あくまでも休暇目的の滞在であることが前提です。</li>
+              <li>年齢制限があり、通常18歳から30歳までの若者が対象です。</li>
+            </ul>
+            <p>
+              観光ビザでは体験できないような、その国の文化や生活様式を深く知ることができるため、
+              若者の間で人気のプログラムとなっています。
+            </p>
+          </div>
+        </section>
 
         <h2 className="text-2xl font-semibold mb-8 text-center">ワーキングホリデーでできること</h2>
         {points.map((point, index) => (
