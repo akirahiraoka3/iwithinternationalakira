@@ -15,6 +15,32 @@ const TimelineItem = ({ icon, title, description }) => (
 );
 
 const RequiredDocuments = () => {
+  const steps1YearTo6MonthsBefore = [
+    {
+      icon: "📚",
+      title: "留学に関する基礎知識を身につけよう！",
+      description: "留学の種類、目的、メリット・デメリットなどを調べ、自分に合った留学プランを考えましょう。"
+    },
+    {
+      icon: "🛂",
+      title: "パスポートを申請しよう！",
+      description: "パスポートの取得には時間がかかることがあります。早めに申請手続きを始めましょう。"
+    }
+  ];
+
+  const steps4To5MonthsBefore = [
+    {
+      icon: "🏫",
+      title: "学校を選ぼう",
+      description: "留学先の国や都市、学校の特徴や評判を調べ、自分の目標に合った学校を選びましょう。"
+    },
+    {
+      icon: "🏠",
+      title: "滞在先を決定しよう",
+      description: "ホームステイ、学生寮、アパートなど、自分に合った滞在先を検討し、決定しましょう。"
+    }
+  ];
+
   const steps3MonthsBefore = [
     {
       icon: "💰",
@@ -53,6 +79,20 @@ const RequiredDocuments = () => {
         <h1 className="text-3xl font-bold mb-8 text-center">必要な書類について</h1>
         
         <div className="max-w-3xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">1年前〜6ヶ月前</h2>
+            {steps1YearTo6MonthsBefore.map((step, index) => (
+              <TimelineItem key={index} {...step} />
+            ))}
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">4〜5ヶ月前</h2>
+            {steps4To5MonthsBefore.map((step, index) => (
+              <TimelineItem key={index} {...step} />
+            ))}
+          </div>
+
           <div className="mb-12">
             <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">3ヶ月前</h2>
             {steps3MonthsBefore.map((step, index) => (
