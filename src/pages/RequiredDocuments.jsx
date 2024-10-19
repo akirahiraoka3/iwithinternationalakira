@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const RequiredDocuments = () => {
   const steps = [
@@ -27,18 +26,14 @@ const RequiredDocuments = () => {
         
         <h2 className="text-2xl font-semibold mb-4 text-center">ビザ取得までの流れ</h2>
         
-        <Accordion type="single" collapsible className="w-full">
+        <div className="space-y-6">
           {steps.map((step, index) => (
-            <AccordionItem value={`item-${index}`} key={index}>
-              <AccordionTrigger className="bg-cyan-500 text-white p-4 rounded-t-lg">
-                {step.title}
-              </AccordionTrigger>
-              <AccordionContent className="bg-gray-100 p-4 rounded-b-lg">
-                {step.content}
-              </AccordionContent>
-            </AccordionItem>
+            <div key={index} className="bg-gray-100 p-4 rounded-lg">
+              <h3 className="text-xl font-semibold mb-2 text-cyan-500">{step.title}</h3>
+              <p>{step.content}</p>
+            </div>
           ))}
-        </Accordion>
+        </div>
 
         <p className="mt-8 text-lg font-semibold">
           具体的な必要書類や準備の流れについては、留学先や留学プログラムによって異なりますので、
