@@ -69,6 +69,37 @@ const RequiredDocuments = () => {
       icon: "🏥",
       title: "医療保険に加入しよう",
       description: "海外での万が一に備えて、医療保険への加入をお忘れなく。"
+    },
+    {
+      icon: "🏛️",
+      title: "役所での手続きをしよう！",
+      description: "住民票の移動や国民健康保険の手続きなど、必要な役所での手続きを済ませましょう。"
+    },
+    {
+      icon: "💳",
+      title: "留学中のお金を準備しよう",
+      description: "海外で使えるクレジットカードの準備や、現地通貨の換金など、お金に関する準備をしましょう。"
+    },
+    {
+      icon: "📱",
+      title: "留学中の通信環境の準備をしよう！",
+      description: "現地で使えるSIMカードの準備や、Wi-Fiルーターのレンタルなど、通信環境の準備をしましょう。"
+    }
+  ];
+
+  const steps1MonthBefore = [
+    {
+      icon: "📋",
+      title: "留学前の最終確認をしよう",
+      description: "航空券、ビザ、保険証書、滞在先の情報など、重要書類の最終確認をしましょう。また、必要に応じて現地の緊急連絡先リストを作成しておきましょう。"
+    }
+  ];
+
+  const steps1To2WeeksBefore = [
+    {
+      icon: "🧳",
+      title: "準備書類・持ち物の最終確認しよう",
+      description: "パスポート、ビザ、航空券、保険証書などの重要書類と、衣類や日用品などの持ち物を最終確認しましょう。荷物の重量制限も忘れずにチェックしてください。"
     }
   ];
 
@@ -105,6 +136,24 @@ const RequiredDocuments = () => {
             {steps2MonthsBefore.map((step, index) => (
               <TimelineItem key={index} {...step} />
             ))}
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">1ヶ月前</h2>
+            {steps1MonthBefore.map((step, index) => (
+              <TimelineItem key={index} {...step} />
+            ))}
+          </div>
+
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">1〜2週間前</h2>
+            {steps1To2WeeksBefore.map((step, index) => (
+              <TimelineItem key={index} {...step} />
+            ))}
+          </div>
+
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-cyan-500">留学へ出発！</h2>
           </div>
         </div>
       </main>
