@@ -21,9 +21,9 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection scrollToContact={scrollToContact} />
-      <AboutSection />
       <ProgramsSection />
       <PurposesSection />
+      <AboutSection />
       <ReasonsSection />
       <TestimonialsSection />
       <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />

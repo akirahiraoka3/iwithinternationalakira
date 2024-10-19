@@ -70,8 +70,8 @@ export const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">留学体験者の声</h2>
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold">留学体験者の声</h2>
           <div className="flex space-x-4">
             <Button variant="outline" size="icon" onClick={handlePrev} disabled={currentIndex === 0}>
               <ChevronLeft className="h-4 w-4" />
