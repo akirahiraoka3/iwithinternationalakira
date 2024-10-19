@@ -22,14 +22,17 @@ const WorkingHoliday = () => {
     {
       title: "海外で自由に過ごすことができる",
       content: "ワーキングホリデービザを利用すれば、最長1年間、海外で自由に働きながら滞在することができます。この期間中、現地の文化に深く触れ、語学力を向上させ、かけがえのない経験を積むことができます。",
+      image: "/images/working-holiday-freedom.jpg"
     },
     {
-      title: "自分なりの長期滞在ができる",
+      title: "働きながら長期滞在することができる",
       content: "ワーキングホリデーでは、自分のペースで長期滞在を楽しむことができます。旅行だけでなく、現地での仕事や学習など、自分の目的に合わせた滞在プランを立てることができます。これにより、より深い文化理解と個人的成長が可能になります。",
+      image: "/images/working-holiday-work.jpg"
     },
     {
-      title: "キャリアの幅を広げる体験ができる",
-      content: "海外での就労経験は、グローバルな視点とスキルを身につける絶好の機会です。異なる文化や仕事環境に適応する能力は、将来のキャリアにおいて大きな強みとなります。また、国際的なネットワークを構築することで、将来の職業選択の幅も広がります。",
+      title: "よりリアルな文化の違いを体験できる",
+      content: "海外で実際に生活することで、旅行や短期滞在では体験できないような文化の違いや生活様式を肌で感じることができます。また、現地の人々との交流を通じて、その国の本当の姿を知ることができます。このような経験は視野を広げ、国際的なキャリアップにもつながる可能性があります。",
+      image: "/images/working-holiday-culture.jpg"
     }
   ];
 
@@ -80,12 +83,16 @@ const WorkingHoliday = () => {
           ワーキングホリデーは、海外での生活を深く体験したい若者にとって魅力的な選択肢です。
         </p>
 
-        <h2 className="text-2xl font-semibold mb-8 text-center">POINT</h2>
-        <h3 className="text-xl font-semibold mb-4 text-center">ワーキングホリデーでできること</h3>
+        <h2 className="text-2xl font-semibold mb-8 text-center">ワーキングホリデーでできること</h2>
         {points.map((point, index) => (
-          <div key={index} className="mb-8">
-            <h4 className="text-2xl font-bold text-cyan-500 mb-4">{`0${index + 1} ${point.title}`}</h4>
-            <p>{point.content}</p>
+          <div key={index} className={`flex flex-col md:flex-row items-center mb-12 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+            <div className="w-full md:w-1/2 mb-4 md:mb-0">
+              <h3 className="text-2xl font-bold text-cyan-500 mb-4">{`0${index + 1} ${point.title}`}</h3>
+              <p>{point.content}</p>
+            </div>
+            <div className="w-full md:w-1/2 md:px-4">
+              <img src={point.image} alt={point.title} className="w-full h-auto rounded-lg shadow-md" />
+            </div>
           </div>
         ))}
 
