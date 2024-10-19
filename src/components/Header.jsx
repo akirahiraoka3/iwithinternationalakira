@@ -70,7 +70,10 @@ const Header = () => {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
-      <Button onClick={() => window.location.href = '/#contact'}>お問い合わせ</Button>
+      <div className="flex items-center">
+        <Button variant="outline" size="lg" className="mr-4">資料をリクエスト</Button>
+        <Button onClick={() => window.location.href = '/#contact'}>お問い合わせ</Button>
+      </div>
     </header>
   );
 };
