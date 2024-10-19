@@ -2,19 +2,47 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+const TimelineItem = ({ icon, title, description }) => (
+  <div className="flex items-start mb-8">
+    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white text-2xl mr-4">
+      {icon}
+    </div>
+    <div>
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
+    </div>
+  </div>
+);
+
 const RequiredDocuments = () => {
-  const steps = [
+  const steps3MonthsBefore = [
     {
-      title: "STEP1 申請条件を確認",
-      content: "ワーキングホリデービザは国によって申請に必要な条件が異なります。条件には年齢制限や健康状態、十分な所持金などが含まれます。条件を満たしていないとビザを取得することができないので、必ず事前に自国の申請条件を確認しておきましょう。"
+      icon: "💰",
+      title: "ご請求書の確認＆お支払い",
+      description: "留学費用の2/3を支払います。この時点で航空券を手配することをおすすめします。早めに手配することで費用を抑えられる可能性があります。"
     },
     {
-      title: "STEP2 必要書類を揃える",
-      content: "申請条件を確認できたら、次に申請に必要になる書類を揃えましょう。申請には有効期限が十分なパスポートや英文の残高証明書などが必要になります。こちらも各国で異なりすぐに揃えることができないものばかりなので、事前に確認し準備しておきましょう。"
+      icon: "✈️",
+      title: "航空券の手配をしよう",
+      description: "航空券は早めの予約がお得です！"
     },
     {
-      title: "STEP3 申請する",
-      content: "必要書類を揃えたら実際に申請をします。申請から取得までの手順はオンライン申請、書類郵送、面接、健康診断など国によって様々です。また、各国申請期間や指定方法も異なるので必ず確認してから申請するようにしましょう。"
+      icon: "🛂",
+      title: "ビザの手配をしよう",
+      description: "申請から取得まで時間がかかるので、早めの準備がおすすめです。手続きに必要な書類は国によって異なります。"
+    },
+    {
+      icon: "🛂",
+      title: "パスポートを確認しよう",
+      description: "有効期限が十分にあることを確認しましょう。期限が近い場合は更新をお忘れなく。"
+    }
+  ];
+
+  const steps2MonthsBefore = [
+    {
+      icon: "🏥",
+      title: "医療保険に加入しよう",
+      description: "海外での万が一に備えて、医療保険への加入をお忘れなく。"
     }
   ];
 
@@ -24,21 +52,21 @@ const RequiredDocuments = () => {
       <main className="container mx-auto px-4 py-16">
         <h1 className="text-3xl font-bold mb-8 text-center">必要な書類について</h1>
         
-        <h2 className="text-2xl font-semibold mb-4 text-center">ビザ取得までの流れ</h2>
-        
-        <div className="space-y-6">
-          {steps.map((step, index) => (
-            <div key={index} className="bg-gray-100 p-4 rounded-lg">
-              <h3 className="text-xl font-semibold mb-2 text-cyan-500">{step.title}</h3>
-              <p>{step.content}</p>
-            </div>
-          ))}
-        </div>
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">3ヶ月前</h2>
+            {steps3MonthsBefore.map((step, index) => (
+              <TimelineItem key={index} {...step} />
+            ))}
+          </div>
 
-        <p className="mt-8 text-lg font-semibold">
-          具体的な必要書類や準備の流れについては、留学先や留学プログラムによって異なりますので、
-          詳細は各留学プログラムのページをご確認いただくか、カウンセラーにお問い合わせください。
-        </p>
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-cyan-500">2ヶ月前</h2>
+            {steps2MonthsBefore.map((step, index) => (
+              <TimelineItem key={index} {...step} />
+            ))}
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
