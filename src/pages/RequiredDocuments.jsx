@@ -107,7 +107,7 @@ const RequiredDocuments = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-3xl font-bold mb-8 text-center">必要な書類について</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center">渡航までの流れ・準備</h1>
         
         <div className="max-w-3xl mx-auto">
           <div className="mb-12">
