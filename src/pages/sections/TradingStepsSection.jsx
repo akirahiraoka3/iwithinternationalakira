@@ -4,21 +4,21 @@ export const TradingStepsSection = () => {
   const steps = [
     {
       number: 1,
-      title: '口座のお申込',
+      title: 'お問い合わせの送信',
       description: '口座開設のお申込はWEBで完結できます本人確認書類をご用意ください',
       icon: '✏️',
       note: '申込は最短5分から！'
     },
     {
       number: 2,
-      title: 'ログイン情報をお届け',
+      title: 'カウンセリングのご案内',
       description: '最短翌営業日にメール、または5営業日後に郵送でログインIDをお届けします',
       icon: '✉️',
       note: '最短翌日'
     },
     {
       number: 3,
-      title: 'お取引スタート',
+      title: 'カウンセリング',
       description: '初期設定後、必要な資金を入金して、お取引を始めましょう',
       icon: '💻',
     }
@@ -37,7 +37,7 @@ export const TradingStepsSection = () => {
           {steps.map((step, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md flex-1 relative">
               <div className="absolute -top-4 -left-4 bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
-                STEP{step.number}
+                {step.number}
               </div>
               {step.note && (
                 <div className="absolute -top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">
