@@ -7,6 +7,7 @@ import { ProgramsSection } from './sections/ProgramsSection';
 import { PurposesSection } from './sections/PurposesSection';
 import { ReasonsSection } from './sections/ReasonsSection';
 import { TestimonialsSection } from './sections/TestimonialsSection';
+import { TradingStepsSection } from './sections/TradingStepsSection';
 import { ContactSection } from './sections/ContactSection';
 
 const Index = () => {
@@ -26,6 +27,7 @@ const Index = () => {
       <AboutSection />
       <ReasonsSection />
       <TestimonialsSection />
+      <TradingStepsSection />
       <ContactSection contactRef={contactRef} isChecked={isChecked} setIsChecked={setIsChecked} />
       <Footer />
     </div>
