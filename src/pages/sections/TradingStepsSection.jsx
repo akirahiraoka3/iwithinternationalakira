@@ -5,21 +5,21 @@ export const TradingStepsSection = () => {
     {
       number: 1,
       title: 'お問い合わせの送信',
-      description: '口座開設のお申込はWEBで完結できます本人確認書類をご用意ください',
+      description: 'お問い合わせからのお申込はWEBでも完結できます',
       icon: '✏️',
-      note: '申込は最短5分から！'
+      note: '申込は最短1分から！'
     },
     {
       number: 2,
       title: 'カウンセリングのご案内',
-      description: '最短翌営業日にメール、または5営業日後に郵送でログインIDをお届けします',
+      description: '最短翌営業日にメール、または3営業日後にご連絡させていただきます。',
       icon: '✉️',
       note: '最短翌日'
     },
     {
       number: 3,
       title: 'カウンセリング',
-      description: '初期設定後、必要な資金を入金して、お取引を始めましょう',
+      description: 'ご要望に応じたプランをご提案します',
       icon: '💻',
     }
   ];
@@ -28,10 +28,10 @@ export const TradingStepsSection = () => {
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">
-          ＼ 口座開設もスマホで簡単！ ／
+          ＼ お問い合わせも簡単！ ／
         </h2>
         <h3 className="text-4xl font-bold mb-12 text-center">
-          お取引開始までの3ステップ
+          カウンセリングまでの3ステップ
         </h3>
         <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-4">
           {steps.map((step, index) => (
