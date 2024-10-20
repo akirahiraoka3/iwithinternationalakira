@@ -14,24 +14,21 @@ export const ReasonsSection = () => {
   ];
 
   return (
-    <section id="reasons" className="bg-green-900 py-16">
+    <section id="reasons" className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-8 text-center text-green-300">安心・安全</h2>
-        <p className="text-center text-green-100 mb-12">
-          Wiseは1000万人を超える名客様の、何百兆円300ポンドの送金を安全にサポートしています。
-        </p>
+        <h2 className="text-3xl font-bold mb-8 text-center">選ばれる理由</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {reasons.slice(0, 3).map((reason, index) => (
+          {reasons.map((reason, index) => (
             <Link to={reason.link} key={index}>
-              <Card className="bg-green-800 text-green-100 border-none hover:bg-green-700 transition-colors">
+              <Card className="transition-transform duration-300 hover:scale-105 cursor-pointer">
                 <CardHeader>
-                  <div className="mb-4 bg-green-600 w-12 h-12 rounded-full flex items-center justify-center">
-                    {React.cloneElement(reason.icon, { className: "w-6 h-6 text-green-100" })}
+                  <div className="mb-4 bg-primary w-12 h-12 rounded-xl flex items-center justify-center">
+                    {React.cloneElement(reason.icon, { className: "w-6 h-6 text-white" })}
                   </div>
-                  <CardTitle className="text-green-300">{reason.title}</CardTitle>
+                  <CardTitle>{reason.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-green-100">{reason.description}</p>
+                  <p className="text-gray-600">{reason.description}</p>
                 </CardContent>
               </Card>
             </Link>
