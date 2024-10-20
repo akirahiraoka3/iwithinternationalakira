@@ -31,7 +31,7 @@ const Programs = () => {
           <p className="text-center mb-8 text-gray-600">目的から選ぶ</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {purposes.map((purpose) => (
-              <Card key={purpose.id} className="overflow-hidden">
+              <Card key={purpose.id} className="overflow-hidden transition-transform duration-300 hover:scale-105">
                 <img src={purpose.image} alt={purpose.name} className="w-full h-48 object-cover" />
                 <CardContent className="p-4">
                   <h3 className="text-lg font-semibold mb-2">{purpose.name}</h3>
@@ -48,7 +48,7 @@ const Programs = () => {
           <p className="text-center mb-8 text-gray-600">年代から選ぶ</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {ages.map((age) => (
-              <Card key={age.id} className="overflow-hidden">
+              <Card key={age.id} className="overflow-hidden transition-transform duration-300 hover:scale-105">
                 <img src={age.image} alt={age.name} className="w-full h-48 object-cover" />
                 <CardContent className="p-4">
                   <h3 className="text-lg font-semibold mb-2">{age.name}</h3>
