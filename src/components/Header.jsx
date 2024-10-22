@@ -32,13 +32,15 @@ const Header = () => {
         { name: 'ワーキングホリデーとは？', href: '/working-holiday', description: 'ワーキングホリデーの基本情報と魅力' },
         { name: 'インターンシップ留学って？', href: '/overseas-internship', description: '海外インターンシップ留学の特徴と利点' },
         { name: '今後の流れ・必要な書類は？', href: '/required-documents', description: '留学に必要な書類の準備ガイド' },
+        { name: 'よくある質問', href: '/faq', description: '留学に関するよくある質問と回答' },
       ],
     },
     {
-      title: '年代・目的から選ぶ',
+      title: 'よくある質問',
       items: [
-        { name: '目的から選ぶ', href: '/programs#purpose', description: '留学の目的に合わせて最適なプランを見つける' },
-        { name: '年代から選ぶ', href: '/programs#age', description: '年代別の留学プランを探す' },
+        { name: '費用について', href: '/faq#cost', description: '留学費用の詳細と支払い方法' },
+        { name: '準備について', href: '/faq#preparation', description: '留学前の準備に関するアドバイス' },
+        { name: '滞在先について', href: '/faq#accommodation', description: '滞在先の種類と選び方' },
       ],
     },
   ];
