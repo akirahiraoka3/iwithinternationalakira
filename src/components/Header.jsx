@@ -36,11 +36,10 @@ const Header = () => {
       ],
     },
     {
-      title: 'よくある質問',
+      title: '年代・目的から選ぶ',
       items: [
-        { name: '費用について', href: '/faq#cost', description: '留学費用の詳細と支払い方法' },
-        { name: '準備について', href: '/faq#preparation', description: '留学前の準備に関するアドバイス' },
-        { name: '滞在先について', href: '/faq#accommodation', description: '滞在先の種類と選び方' },
+        { name: '目的から選ぶ', href: '/programs#purpose', description: '留学の目的に合わせて最適なプランを見つける' },
+        { name: '年代から選ぶ', href: '/programs#age', description: '年代に合わせた留学プランを探す' },
       ],
     },
   ];
