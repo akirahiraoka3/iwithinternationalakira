@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from 'react-router-dom';
 
 const purposes = [
   { id: 1, name: '短期留学', description: '1週間から3ヶ月の短期留学や、学校休暇中の語学研修' },
@@ -29,16 +30,30 @@ const Programs = () => {
         <section className="mb-20">
           <h2 className="text-3xl font-bold mb-12 text-center">PURPOSE</h2>
           <p className="text-center mb-8 text-gray-600">目的から選ぶ</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {purposes.map((purpose) => (
-              <Card key={purpose.id} className="overflow-hidden transition-transform duration-300 hover:scale-105">
-                <img src="/placeholder.svg" alt={purpose.name} className="w-full h-48 object-cover" />
-                <CardContent className="p-4">
-                  <h3 className="text-lg font-semibold mb-2">{purpose.name}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{purpose.description}</p>
-                  <a href="#" className="mt-2 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors">詳細を見る</a>
-                </CardContent>
-              </Card>
+              <Link 
+                key={purpose.id} 
+                to="#" 
+                className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105"
+              >
+                <div>
+                  <img
+                    src="/placeholder.svg"
+                    alt={purpose.name}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900">{purpose.name}</h3>
+                    <p className="text-gray-600 mb-4">{purpose.description}</p>
+                    <span 
+                      className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
+                    >
+                      もっと詳しく
+                    </span>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -46,16 +61,30 @@ const Programs = () => {
         <section>
           <h2 className="text-3xl font-bold mb-12 text-center">AGE</h2>
           <p className="text-center mb-8 text-gray-600">年代から選ぶ</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {ages.map((age) => (
-              <Card key={age.id} className="overflow-hidden transition-transform duration-300 hover:scale-105">
-                <img src="/placeholder.svg" alt={age.name} className="w-full h-48 object-cover" />
-                <CardContent className="p-4">
-                  <h3 className="text-lg font-semibold mb-2">{age.name}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{age.description}</p>
-                  <a href="#" className="mt-2 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors">詳細を見る</a>
-                </CardContent>
-              </Card>
+              <Link 
+                key={age.id} 
+                to="#" 
+                className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105"
+              >
+                <div>
+                  <img
+                    src="/placeholder.svg"
+                    alt={age.name}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-lg font-semibold mb-2 text-gray-900">{age.name}</h3>
+                    <p className="text-gray-600 mb-4">{age.description}</p>
+                    <span 
+                      className="mt-4 inline-block bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
+                    >
+                      詳細を見る
+                    </span>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </section>
