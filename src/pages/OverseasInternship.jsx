@@ -22,17 +22,17 @@ const OverseasInternship = () => {
     {
       title: "実践的なスキルを身につける",
       content: "海外の職場環境で実際に働くことで、グローバルなビジネススキルや専門知識を実践的に学ぶことができます。これは将来のキャリアにおいて大きな強みとなります。",
-      image: "/images/internship-skills.jpg"
+      image: "/placeholder.svg"
     },
     {
       title: "異文化環境での就業体験",
       content: "異なる文化背景を持つ同僚や顧客と協働することで、国際的な視野と異文化コミュニケーション能力が養われます。これはグローバル社会で活躍する上で非常に重要なスキルです。",
-      image: "/images/internship-culture.jpg"
+      image: "/placeholder.svg"
     },
     {
       title: "語学力の向上とキャリアネットワークの構築",
       content: "日常的に外国語を使用する環境で働くことで、ビジネスレベルの語学力が身につきます。また、国際的な人脈を築くことができ、将来のキャリア形成に役立ちます。",
-      image: "/images/internship-network.jpg"
+      image: "/placeholder.svg"
     }
   ];
 
@@ -43,7 +43,7 @@ const OverseasInternship = () => {
         <section className="mb-16">
           <div className="relative h-64 md:h-96 mb-8">
             <img
-              src="/images/overseas-internship-hero.jpg"
+              src="/placeholder.svg"
               alt="Overseas Internship"
               className="w-full h-full object-cover rounded-lg"
             />
