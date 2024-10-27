@@ -16,10 +16,10 @@ const Programs = () => {
   ];
 
   const ages = [
-    { id: 1, name: '大学生', description: '夏休み・春休みで行く短期留学から1年間の交換留学まで' },
-    { id: 2, name: '社会人', description: 'キャリアアップ・キャリアチェンジを目指す留学' },
-    { id: 3, name: '中高生', description: '自分と世界に出会える。YFUの留学プログラム' },
-    { id: 4, name: 'シニア', description: 'ゆっくり楽しく学べる！50歳からの語学留学や海外生活' },
+    { id: 1, name: '大学生', description: '夏休み・春休みで行く短期留学から1年間の交換留学まで', image: '/placeholder.svg' },
+    { id: 2, name: '社会人', description: 'キャリアアップ・キャリアチェンジを目指す留学', image: 'https://cdn.midjourney.com/de790ca1-2c63-4be1-8304-f030fdff9f21/0_2.png' },
+    { id: 3, name: '中高生', description: '自分と世界に出会える。YFUの留学プログラム', image: '/placeholder.svg' },
+    { id: 4, name: 'シニア', description: 'ゆっくり楽しく学べる！50歳からの語学留学や海外生活', image: '/placeholder.svg' },
   ];
 
   return (
@@ -69,7 +69,7 @@ const Programs = () => {
               >
                 <div>
                   <img
-                    src="/placeholder.svg"
+                    src={age.image}
                     alt={age.name}
                     className="w-full h-48 object-cover"
                   />
