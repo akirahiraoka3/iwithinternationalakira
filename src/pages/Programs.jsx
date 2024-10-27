@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 
 const Programs = () => {
   const purposes = [
-    { id: 1, name: '短期留学', description: '1週間から3ヶ月の短期留学や、学校休暇中の語学研修' },
-    { id: 2, name: '長期留学', description: '高度な語学力とスキルを身につける3ヶ月以上の長期留学' },
-    { id: 3, name: 'ワーホリ', description: '学び・働く・旅する。現地で自由に過ごせる！' },
-    { id: 4, name: '語学留学', description: '留学カウンセラーが貴方に合った留学プランをご提案' },
-    { id: 5, name: '中高生留学', description: '自分と世界に出会える。YFUの留学プログラム' },
-    { id: 6, name: '大学留学', description: '海外の大学で専門分野を学ぶ留学' },
-    { id: 7, name: '親子留学', description: '1週間・2週間から参加可能！親子で海外に行けるプラン' },
-    { id: 8, name: '2ヶ国留学', description: '英語とアジア言語を同時に学べるプラン' },
+    { id: 1, name: '短期留学', description: '1週間から3ヶ月の短期留学や、学校休暇中の語学研修', image: '/placeholder.svg' },
+    { id: 2, name: '長期留学', description: '高度な語学力とスキルを身につける3ヶ月以上の長期留学', image: 'https://cdn.midjourney.com/3e0ea157-2368-4536-9664-c6151c7062a1/0_1.png' },
+    { id: 3, name: 'ワーホリ', description: '学び・働く・旅する。現地で自由に過ごせる！', image: '/placeholder.svg' },
+    { id: 4, name: '語学留学', description: '留学カウンセラーが貴方に合った留学プランをご提案', image: '/placeholder.svg' },
+    { id: 5, name: '中高生留学', description: '自分と世界に出会える。YFUの留学プログラム', image: '/placeholder.svg' },
+    { id: 6, name: '大学留学', description: '海外の大学で専門分野を学ぶ留学', image: '/placeholder.svg' },
+    { id: 7, name: '親子留学', description: '1週間・2週間から参加可能！親子で海外に行けるプラン', image: '/placeholder.svg' },
+    { id: 8, name: '2ヶ国留学', description: '英語とアジア言語を同時に学べるプラン', image: '/placeholder.svg' },
   ];
 
   const ages = [
@@ -38,7 +38,7 @@ const Programs = () => {
               >
                 <div>
                   <img
-                    src="/placeholder.svg"
+                    src={purpose.image}
                     alt={purpose.name}
                     className="w-full h-48 object-cover"
                   />
