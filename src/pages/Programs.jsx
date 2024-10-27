@@ -19,7 +19,7 @@ const Programs = () => {
     { id: 1, name: '大学生', description: '夏休み・春休みで行く短期留学から1年間の交換留学まで', image: 'https://cdn.midjourney.com/4a88ef18-d340-4b3f-8d09-1b5c82638387/0_2.png' },
     { id: 2, name: '社会人', description: 'キャリアアップ・キャリアチェンジを目指す留学', image: 'https://cdn.midjourney.com/ec623455-9c82-4dad-8838-6c0239e8d029/0_2.png' },
     { id: 3, name: '中高生', description: '自分と世界に出会える。YFUの留学プログラム', image: 'https://cdn.midjourney.com/4e984fcd-7efe-469e-a737-462a090f7848/0_3.png' },
-    { id: 4, name: 'シニア', description: 'ゆっくり楽しく学べる！50歳からの語学留学や海外生活', image: '/placeholder.svg' },
+    { id: 4, name: 'シニア', description: 'ゆっくり楽しく学べる！50歳からの語学留学や海外生活', image: 'https://cdn.midjourney.com/4fd3f3c5-85f9-4d61-886c-6f6544f82185/0_1.png' },
   ];
 
   return (
