@@ -9,7 +9,7 @@ const Programs = () => {
     { id: 2, name: '長期留学', description: '高度な語学力とスキルを身につける3ヶ月以上の長期留学', image: 'https://cdn.midjourney.com/3e0ea157-2368-4536-9664-c6151c7062a1/0_1.png' },
     { id: 3, name: 'ワーホリ', description: '学び・働く・旅する。現地で自由に過ごせる！', image: 'https://cdn.midjourney.com/af24bbf8-a53c-486e-8b92-5ea4ea864593/0_0.png' },
     { id: 4, name: '語学留学', description: '留学カウンセラーが貴方に合った留学プランをご提案', image: 'https://cdn.midjourney.com/057d6f2b-49d8-4d73-8022-b418122a5207/0_2.png' },
-    { id: 5, name: '中高生留学', description: '自分と世界に出会える。YFUの留学プログラム', image: '/placeholder.svg' },
+    { id: 5, name: '中高生留学', description: '自分と世界に出会える。YFUの留学プログラム', image: 'https://cdn.midjourney.com/68b9daa0-6db7-41af-90e4-1bd0e96c45d9/0_1.png' },
     { id: 6, name: '大学留学', description: '海外の大学で専門分野を学ぶ留学', image: 'https://cdn.midjourney.com/539fd312-eb0e-4f04-9cb1-5dc7a9b87f4a/0_1.png' },
     { id: 7, name: '親子留学', description: '1週間・2週間から参加可能！親子で海外に行けるプラン', image: '/placeholder.svg' },
     { id: 8, name: '2ヶ国留学', description: '英語とアジア言語を同時に学べるプラン', image: '/placeholder.svg' },
