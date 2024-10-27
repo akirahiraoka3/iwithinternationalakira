@@ -18,7 +18,7 @@ export const ProgramsSection = () => {
     { 
       title: 'ワーキングホリデー', 
       description: '現地の文化を体験しながら語学力を向上。',
-      image: 'https://placehold.co/600x400?text=Working+Holiday',
+      image: 'https://cdn.midjourney.com/12529148-14bd-4771-8422-9a4a922e385c/0_2.png',
       link: '/language-study'
     },
   ];
