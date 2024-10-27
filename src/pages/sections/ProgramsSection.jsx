@@ -6,7 +6,7 @@ export const ProgramsSection = () => {
     { 
       title: '海外インターンシップ', 
       description: '実践的なスキルを海外で身につけましょう。',
-      image: 'https://placehold.co/600x400?text=Internship',
+      image: 'https://cdn.midjourney.com/71da1bd6-e8b3-4ed7-8ece-3c473c673f79/0_0.png',
       link: '/internship'
     },
     { 
