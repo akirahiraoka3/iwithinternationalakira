@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Programs = () => {
   const purposes = [
-    { id: 1, name: '短期留学', description: '1週間から3ヶ月の短期留学や、学校休暇中の語学研修', image: '/placeholder.svg' },
+    { id: 1, name: '短期留学', description: '1週間から3ヶ月の短期留学や、学校休暇中の語学研修', image: 'https://cdn.midjourney.com/7f44fccc-cf3f-4636-a0d4-5128b3583c3a/0_0.png' },
     { id: 2, name: '長期留学', description: '高度な語学力とスキルを身につける3ヶ月以上の長期留学', image: 'https://cdn.midjourney.com/3e0ea157-2368-4536-9664-c6151c7062a1/0_1.png' },
     { id: 3, name: 'ワーホリ', description: '学び・働く・旅する。現地で自由に過ごせる！', image: 'https://cdn.midjourney.com/af24bbf8-a53c-486e-8b92-5ea4ea864593/0_0.png' },
     { id: 4, name: '語学留学', description: '留学カウンセラーが貴方に合った留学プランをご提案', image: '/placeholder.svg' },
