@@ -12,7 +12,6 @@ const Programs = () => {
     { id: 5, name: '中高生留学', description: '自分と世界に出会える。YFUの留学プログラム', image: 'https://cdn.midjourney.com/68b9daa0-6db7-41af-90e4-1bd0e96c45d9/0_1.png' },
     { id: 6, name: '大学留学', description: '海外の大学で専門分野を学ぶ留学', image: 'https://cdn.midjourney.com/539fd312-eb0e-4f04-9cb1-5dc7a9b87f4a/0_1.png' },
     { id: 7, name: '親子留学', description: '1週間・2週間から参加可能！親子で海外に行けるプラン', image: 'https://cdn.midjourney.com/051d2ecc-55a8-44ce-962b-db2cac3753db/0_1.png' },
-    { id: 8, name: '2ヶ国留学', description: '英語とアジア言語を同時に学べるプラン', image: '/placeholder.svg' },
   ];
 
   const ages = [
