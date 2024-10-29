@@ -7,7 +7,7 @@ const Programs = () => {
   const purposes = [
     { id: 1, name: '短期留学', description: '1週間から3ヶ月の短期留学や、学校休暇中の語学研修', image: 'https://cdn.midjourney.com/7f44fccc-cf3f-4636-a0d4-5128b3583c3a/0_0.png' },
     { id: 2, name: '長期留学', description: '高度な語学力とスキルを身につける3ヶ月以上の長期留学', image: 'https://cdn.midjourney.com/3e0ea157-2368-4536-9664-c6151c7062a1/0_1.png' },
-    { id: 3, name: 'ワーホリ', description: '学び・働く・旅する。現地で自由に過ごせる！', image: 'https://cdn.midjourney.com/af24bbf8-a53c-486e-8b92-5ea4ea864593/0_0.png', href: '/working-holiday' },
+    { id: 3, name: 'ワーホリ', description: '学び・働く・旅する。現地で自由に過ごせる！', image: 'https://cdn.midjourney.com/af24bbf8-a53c-486e-8b92-5ea4ea864593/0_0.png' },
     { id: 4, name: '語学留学', description: '留学カウンセラーが貴方に合った留学プランをご提案', image: 'https://cdn.midjourney.com/057d6f2b-49d8-4d73-8022-b418122a5207/0_2.png' },
     { id: 5, name: '中高生留学', description: '自分と世界に出会える。YFUの留学プログラム', image: 'https://cdn.midjourney.com/68b9daa0-6db7-41af-90e4-1bd0e96c45d9/0_1.png' },
     { id: 6, name: '大学留学', description: '海外の大学で専門分野を学ぶ留学', image: 'https://cdn.midjourney.com/539fd312-eb0e-4f04-9cb1-5dc7a9b87f4a/0_1.png' },
@@ -32,7 +32,7 @@ const Programs = () => {
             {purposes.map((purpose) => (
               <Link 
                 key={purpose.id} 
-                to={purpose.href || "#"} 
+                to="#" 
                 className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105"
               >
                 <div>
