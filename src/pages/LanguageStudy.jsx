@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative h-96">
       <img
-        src="/images/language-study-hero.jpg"
+        src="https://cdn.midjourney.com/01a8a4aa-1c4a-4fca-b356-f3d8c5f2b0a9/0_0.png"
         alt="Students in a language class"
         className="w-full h-full object-cover"
       />
@@ -30,7 +30,11 @@ const ContentSection = () => {
             日常生活の中で言語を使用することで、教室では得られない実践的なコミュニケーション能力を身につけることができます。
             また、現地の文化に直接触れることで、言語だけでなく、異文化理解も深めることができます。
           </p>
-          <img src="/images/language-immersion.jpg" alt="Students practicing language" className="w-1/3 object-cover" />
+          <img 
+            src="https://cdn.midjourney.com/539fd312-eb0e-4f04-9cb1-5dc7a9b87f4a/0_1.png" 
+            alt="Students practicing language" 
+            className="w-1/3 object-cover" 
+          />
         </div>
       </div>
 
@@ -41,7 +45,11 @@ const ContentSection = () => {
           短期から長期まで、あなたのニーズに合わせて柔軟に期間を選択できます。
           また、ホームステイや学生寮など、滞在方法も選択可能です。
         </p>
-        <img src="/images/language-destinations.jpg" alt="Various language study destinations" className="w-full h-64 object-cover mb-4" />
+        <img 
+          src="https://cdn.midjourney.com/057d6f2b-49d8-4d73-8022-b418122a5207/0_2.png" 
+          alt="Various language study destinations" 
+          className="w-full h-64 object-cover mb-4" 
+        />
         <p className="text-sm italic">世界中の多様な留学先で、あなたの語学力と国際感覚を磨きます。</p>
       </div>
 
@@ -54,7 +62,11 @@ const ContentSection = () => {
             24時間体制のサポートで、安心して海外での学習と生活に専念することができます。
             また、帰国後のフォローアップも行い、留学で得た経験を最大限に活かせるようサポートします。
           </p>
-          <img src="/images/language-support.jpg" alt="Support team" className="w-1/3 object-cover" />
+          <img 
+            src="https://cdn.midjourney.com/4a88ef18-d340-4b3f-8d09-1b5c82638387/0_2.png" 
+            alt="Support team" 
+            className="w-1/3 object-cover" 
+          />
         </div>
       </div>
     </section>
