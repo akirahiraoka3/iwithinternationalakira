@@ -32,7 +32,7 @@ const OverseasInternship = () => {
     {
       title: "語学力の向上とキャリアネットワークの構築",
       content: "日常的に外国語を使用する環境で働くことで、ビジネスレベルの語学力が身につきます。また、国際的な人脈を築くことができ、将来のキャリア形成に役立ちます。",
-      image: "/placeholder.svg"
+      image: "https://cdn.midjourney.com/3af7c41e-01c1-42df-91d8-e22a34ceeae6/0_2.png"
     }
   ];
 
