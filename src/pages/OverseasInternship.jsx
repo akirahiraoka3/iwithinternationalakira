@@ -40,39 +40,38 @@ const OverseasInternship = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="container mx-auto px-4 py-16">
-        <section className="mb-16">
-          <div className="relative h-64 md:h-96 mb-8">
-            <img
-              src="/placeholder.svg"
-              alt="Overseas Internship"
-              className="w-full h-full object-cover rounded-lg"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
-                OVERSEAS INTERNSHIP
-                <span className="block text-xl md:text-2xl mt-2">海外インターンシップ</span>
-              </h1>
-            </div>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">WHAT</h2>
-            <h3 className="text-xl font-semibold mb-4 text-center">海外インターンシップとは？</h3>
-            <p className="mb-4">
-              海外インターンシップは、海外の企業や組織で一定期間働き、実践的な経験を積むプログラムです。
-              通常、数週間から数ヶ月の期間で行われ、専門知識やスキルを実際のビジネス環境で活用する機会を提供します。
-            </p>
-            <ul className="list-disc list-inside mb-4 space-y-2">
-              <li>実践的な職場経験を得ることができます。</li>
-              <li>異文化環境でのビジネススキルを磨くことができます。</li>
-              <li>語学力の向上と国際的な人脈構築が可能です。</li>
-              <li>将来のキャリアに直結する経験を積むことができます。</li>
-            </ul>
-            <p>
-              海外インターンシップは、グローバルな視野を持ちたい学生や若手社会人にとって、
-              貴重な学習と成長の機会となります。
-            </p>
+        <section className="relative h-64 md:h-96 mb-8">
+          <img
+            src="https://cdn.midjourney.com/fdd750ac-b4da-4bd1-a6b6-6767768bdb9e/0_1.png"
+            alt="Overseas Internship"
+            className="w-full h-full object-cover rounded-lg"
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white text-center">
+              OVERSEAS INTERNSHIP
+              <span className="block text-xl md:text-2xl mt-2">海外インターンシップ</span>
+            </h1>
           </div>
         </section>
+        
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">WHAT</h2>
+          <h3 className="text-xl font-semibold mb-4 text-center">海外インターンシップとは？</h3>
+          <p className="mb-4">
+            海外インターンシップは、海外の企業や組織で一定期間働き、実践的な経験を積むプログラムです。
+            通常、数週間から数ヶ月の期間で行われ、専門知識やスキルを実際のビジネス環境で活用する機会を提供します。
+          </p>
+          <ul className="list-disc list-inside mb-4 space-y-2">
+            <li>実践的な職場経験を得ることができます。</li>
+            <li>異文化環境でのビジネススキルを磨くことができます。</li>
+            <li>語学力の向上と国際的な人脈構築が可能です。</li>
+            <li>将来のキャリアに直結する経験を積むことができます。</li>
+          </ul>
+          <p>
+            海外インターンシップは、グローバルな視野を持ちたい学生や若手社会人にとって、
+            貴重な学習と成長の機会となります。
+          </p>
+        </div>
 
         <h2 className="text-2xl font-semibold mb-8 text-center">海外インターンシップでできること</h2>
         {points.map((point, index) => (
