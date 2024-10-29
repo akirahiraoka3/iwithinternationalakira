@@ -27,7 +27,7 @@ const OverseasInternship = () => {
     {
       title: "異文化環境での就業体験",
       content: "異なる文化背景を持つ同僚や顧客と協働することで、国際的な視野と異文化コミュニケーション能力が養われます。これはグローバル社会で活躍する上で非常に重要なスキルです。",
-      image: "/placeholder.svg"
+      image: "https://cdn.midjourney.com/7dd391fc-8fc4-407e-be42-fe8e251f67e5/0_0.png"
     },
     {
       title: "語学力の向上とキャリアネットワークの構築",
