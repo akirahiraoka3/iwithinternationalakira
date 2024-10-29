@@ -3,26 +3,11 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const OverseasInternship = () => {
-  const steps = [
-    {
-      title: "STEP1 インターンシップ先の選定",
-      content: "自分の目標、興味、専攻分野に合わせてインターンシップ先を選びます。業界や企業の特徴、インターンシッププログラムの内容などを考慮しましょう。"
-    },
-    {
-      title: "STEP2 応募準備",
-      content: "必要な書類（履歴書、志望動機書、推薦状など）を準備します。英語での書類作成が必要な場合もあるので、十分な時間をかけて準備しましょう。"
-    },
-    {
-      title: "STEP3 応募と選考",
-      content: "選んだインターンシップ先に応募し、選考プロセスを経ます。面接がある場合は、事前に十分な準備をしておきましょう。内定が決まったら、ビザの申請を始めます。"
-    }
-  ];
-
   const points = [
     {
       title: "実践的なスキルを身につける",
       content: "海外の職場環境で実際に働くことで、グローバルなビジネススキルや専門知識を実践的に学ぶことができます。これは将来のキャリアにおいて大きな強みとなります。",
-      image: "/placeholder.svg"
+      image: "https://cdn.midjourney.com/a8df8a23-9037-4a54-bab1-082484a34b69/0_1.png"
     },
     {
       title: "異文化環境での就業体験",
