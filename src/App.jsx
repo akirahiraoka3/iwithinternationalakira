@@ -7,7 +7,6 @@ import { navItems } from "./nav-items";
 import Programs from "./pages/Programs";
 import OverseasInternship from "./pages/OverseasInternship";
 import LanguageStudy from "./pages/LanguageStudy";
-import UniversitySupport from "./pages/UniversitySupport";
 import Countries from "./pages/Countries";
 import FAQ from "./pages/FAQ";
 import LearnAboutStudyAbroad from "./pages/LearnAboutStudyAbroad";
@@ -51,7 +50,6 @@ const App = () => (
           <Route path="/programs" element={<Programs />} />
           <Route path="/internship" element={<OverseasInternship />} />
           <Route path="/language-study" element={<LanguageStudy />} />
-          <Route path="/university-support" element={<UniversitySupport />} />
           <Route path="/countries" element={<Countries />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/learn-about-study-abroad" element={<LearnAboutStudyAbroad />} />

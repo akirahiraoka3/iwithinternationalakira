@@ -18,7 +18,7 @@ const Header = () => {
       items: [
         { name: '海外インターンシップ', href: '/internship', description: '実践的なスキルを身につけながら、グローバルな環境で働く経験を積む' },
         { name: '短期・長期留学', href: '/language-study', description: '語学力向上と異文化体験を通じて、グローバルな視野を広げる' },
-        { name: 'ワーキングホリデー', href: '/university-support', description: '海外で働きながら、その国の文化や生活を体験する' },
+        { name: 'ワーキングホリデー', href: '/working-holiday', description: '海外で働きながら、その国の文化や生活を体験する' },
         { name: '目的から選ぶ', href: '/programs', description: '留学の目的に合わせて最適なプランを見つける' },
       ],
     },
