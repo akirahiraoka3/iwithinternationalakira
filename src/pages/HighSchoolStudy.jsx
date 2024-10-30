@@ -22,7 +22,7 @@ const HighSchoolStudy = () => {
     {
       title: "異文化理解力の向上",
       content: "若いうちから異なる文化や価値観に触れることで、グローバルな視野と柔軟な思考力が身につきます。これは将来のキャリアや人生設計に大きな影響を与えます。",
-      image: "/images/highschool-cultural-understanding.jpg"
+      image: "https://cdn.midjourney.com/2bd792d6-935b-49df-bd5b-dba5e6587b69/0_0.png"
     },
     {
       title: "語学力の飛躍的向上",
