@@ -41,7 +41,7 @@ const ShortTermStudy = () => {
       <Header />
       <main className="container mx-auto px-4 py-16">
         <section className="mb-16">
-          <div className="relative h-64 md:h-96 mb-8">
+          <div className="relative h-80 md:h-[32rem] mb-8">
             <img
               src="https://cdn.midjourney.com/fa3b6f25-42a8-4cc0-8764-e6e53ce86e7f/0_2.png"
               alt="Short Term Study Abroad"
