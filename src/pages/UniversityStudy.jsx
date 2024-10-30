@@ -32,7 +32,7 @@ const UniversityStudy = () => {
     {
       title: "語学力の向上",
       content: "日常生活や授業を通じて、実践的な語学力を磨くことができます。英語圏以外の国でも、英語で授業を行う大学が増えており、複数の言語を習得するチャンスもあります。",
-      image: "/images/university-language.jpg"
+      image: "https://cdn.midjourney.com/f82817b7-1379-4144-8618-a71348246a22/0_1.png"
     }
   ];
 
