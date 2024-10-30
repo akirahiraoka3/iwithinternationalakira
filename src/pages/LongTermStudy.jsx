@@ -32,7 +32,7 @@ const LongTermStudy = () => {
     {
       title: "異文化適応力の向上",
       content: "長期間異文化の中で生活することで、高い異文化適応力が身につきます。これは、グローバル社会で活躍する上で非常に重要なスキルです。",
-      image: "/images/long-term-adaptation.jpg"
+      image: "https://cdn.midjourney.com/b8bd75dc-f8e2-4004-8503-e2679c2c9794/0_1.png"
     }
   ];
 
