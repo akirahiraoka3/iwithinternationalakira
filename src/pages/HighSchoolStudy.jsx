@@ -41,7 +41,7 @@ const HighSchoolStudy = () => {
       <Header />
       <main className="container mx-auto px-4 py-16">
         <section className="mb-16">
-          <div className="relative h-64 md:h-96 mb-8">
+          <div className="relative h-80 md:h-[32rem] mb-8">
             <img
               src="https://cdn.midjourney.com/a7b9731a-97c5-40c9-8921-a74191cf6e46/0_2.png"
               alt="High School Study Abroad"
