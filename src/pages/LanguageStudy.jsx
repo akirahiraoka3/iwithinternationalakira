@@ -46,7 +46,7 @@ const ContentSection = () => {
           また、ホームステイや学生寮など、滞在方法も選択可能です。
         </p>
         <img 
-          src="https://cdn.midjourney.com/057d6f2b-49d8-4d73-8022-b418122a5207/0_2.png" 
+          src="https://cdn.midjourney.com/52778d00-5a07-464f-b0c7-7d1944e7a001/0_1.png" 
           alt="Various language study destinations" 
           className="w-full h-64 object-cover mb-4" 
         />
