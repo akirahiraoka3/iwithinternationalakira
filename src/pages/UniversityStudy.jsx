@@ -27,7 +27,7 @@ const UniversityStudy = () => {
     {
       title: "専門知識とスキルの習得",
       content: "世界トップレベルの教育を受けることで、専門分野での深い知識とスキルを習得できます。最新の研究や技術に触れる機会も多く、将来の競争力につながります。",
-      image: "/images/university-skills.jpg"
+      image: "https://cdn.midjourney.com/02d2e8b1-33cf-4217-a25e-9e083c75cc64/0_1.png"
     },
     {
       title: "語学力の向上",
