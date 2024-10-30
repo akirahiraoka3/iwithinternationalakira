@@ -43,7 +43,7 @@ const ShortTermStudy = () => {
         <section className="mb-16">
           <div className="relative h-64 md:h-96 mb-8">
             <img
-              src="/images/short-term-study-hero.jpg"
+              src="https://cdn.midjourney.com/fa3b6f25-42a8-4cc0-8764-e6e53ce86e7f/0_2.png"
               alt="Short Term Study Abroad"
               className="w-full h-full object-cover rounded-lg"
             />
