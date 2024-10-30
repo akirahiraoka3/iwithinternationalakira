@@ -44,9 +44,6 @@ export const ReasonsSection = () => {
           ))}
         </div>
       </div>
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2">
-        <img src="/images/lock-icon.png" alt="Lock Icon" className="w-64 h-64 opacity-20" />
-      </div>
     </section>
   );
 };
