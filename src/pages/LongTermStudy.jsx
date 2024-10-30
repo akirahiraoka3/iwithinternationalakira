@@ -27,7 +27,7 @@ const LongTermStudy = () => {
     {
       title: "専門知識とスキルの獲得",
       content: "大学や専門学校での長期留学では、特定の分野における深い知識とスキルを獲得することができます。これは将来のキャリアにおいて大きな強みとなります。",
-      image: "/images/long-term-skills.jpg"
+      image: "https://cdn.midjourney.com/02d2e8b1-33cf-4217-a25e-9e083c75cc64/0_1.png"
     },
     {
       title: "異文化適応力の向上",
