@@ -27,7 +27,7 @@ const HighSchoolStudy = () => {
     {
       title: "語学力の飛躍的向上",
       content: "日常生活や授業を通じて、実践的な語学力を磨くことができます。若い時期の留学は言語習得に特に効果的で、ネイティブに近い語学力を身につけられる可能性が高まります。",
-      image: "/images/highschool-language-skills.jpg"
+      image: "https://cdn.midjourney.com/ea8398bb-7eea-4e75-a747-25f61564753b/0_2.png"
     },
     {
       title: "自立心と適応力の育成",
