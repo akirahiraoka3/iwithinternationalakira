@@ -22,7 +22,7 @@ const UniversityStudy = () => {
     {
       title: "グローバルな視野を広げる",
       content: "異なる文化や価値観に触れることで、国際的な視野を養い、多様性を理解する力が身につきます。これは将来のキャリアにおいても大きな強みとなります。",
-      image: "/images/university-global-perspective.jpg"
+      image: "https://cdn.midjourney.com/b8bd75dc-f8e2-4004-8503-e2679c2c9794/0_1.png"
     },
     {
       title: "専門知識とスキルの習得",
