@@ -27,7 +27,7 @@ const WorkingHoliday = () => {
     {
       title: "働きながら長期滞在することができる",
       content: "ワーキングホリデーでは、自分のペースで長期滞在を楽しむことができます。旅行だけでなく、現地での仕事や学習など、自分の目的に合わせた滞在プランを立てることができます。これにより、より深い文化理解と個人的成長が可能になります。",
-      image: "/images/working-holiday-work.jpg"
+      image: "https://cdn.midjourney.com/7dd391fc-8fc4-407e-be42-fe8e251f67e5/0_0.png"
     },
     {
       title: "よりリアルな文化の違いを体験できる",
