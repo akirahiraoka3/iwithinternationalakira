@@ -27,7 +27,7 @@ const ShortTermStudy = () => {
     {
       title: "異文化体験",
       content: "短期間でも、現地の文化や習慣に触れることで、グローバルな視野を広げることができます。これは将来のキャリアにも役立つ貴重な経験となります。",
-      image: "/images/short-term-culture.jpg"
+      image: "https://cdn.midjourney.com/5744ca98-e92b-4b9a-8b43-7c8b5fc6ae90/0_3.png"
     },
     {
       title: "自信とモチベーションの向上",
