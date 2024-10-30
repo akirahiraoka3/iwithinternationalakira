@@ -22,7 +22,7 @@ const ShortTermStudy = () => {
     {
       title: "集中的な語学力向上",
       content: "短期間で集中的に語学を学ぶことで、効果的に語学力を向上させることができます。特に、スピーキングとリスニング力の向上が期待できます。",
-      image: "/images/short-term-language.jpg"
+      image: "https://cdn.midjourney.com/91e5b330-cc93-4cd5-b23f-b822d3a565f2/0_1.png"
     },
     {
       title: "異文化体験",
