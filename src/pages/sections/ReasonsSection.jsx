@@ -15,8 +15,19 @@ export const ReasonsSection = () => {
   return (
     <section id="reasons" className="bg-green-800 py-16 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold mb-4 text-center text-white">安心・安全</h2>
-        <p className="text-center text-green-200 mb-12">現在も私たちはサービスを利用していただいているすべてのお客様を安全にサポートしています。</p>
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+          <div className="w-full md:w-1/2">
+            <img
+              src="https://cdn.midjourney.com/e27dcce8-dc2c-42b6-a5a3-a07ab832aa25/0_1.png"
+              alt="Support Image"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div className="w-full md:w-1/2">
+            <h2 className="text-4xl font-bold mb-4 text-white">安心・安全</h2>
+            <p className="text-green-200">現在も私たちはサービスを利用していただいているすべてのお客様を安全にサポートしています。</p>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (
             <Card key={index} className="bg-green-700 border-none">
