@@ -32,7 +32,7 @@ const ShortTermStudy = () => {
     {
       title: "自信とモチベーションの向上",
       content: "海外での経験を通じて、自信とさらなる学習へのモチベーションを得ることができます。これは帰国後の学習や将来の長期留学にもつながります。",
-      image: "/images/short-term-motivation.jpg"
+      image: "https://cdn.midjourney.com/97b2ed7f-de34-4e4d-a685-ea01132a14e7/0_0.png"
     }
   ];
 
