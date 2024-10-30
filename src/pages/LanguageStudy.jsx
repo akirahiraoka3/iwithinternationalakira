@@ -48,7 +48,7 @@ const ContentSection = () => {
         <img 
           src="https://cdn.midjourney.com/52778d00-5a07-464f-b0c7-7d1944e7a001/0_1.png" 
           alt="Various language study destinations" 
-          className="w-full h-64 object-cover mb-4" 
+          className="w-full h-80 object-cover mb-4" 
         />
         <p className="text-sm italic">世界中の多様な留学先で、あなたの語学力と国際感覚を磨きます。</p>
       </div>
