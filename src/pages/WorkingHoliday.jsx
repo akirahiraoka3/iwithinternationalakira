@@ -22,7 +22,7 @@ const WorkingHoliday = () => {
     {
       title: "海外で自由に過ごすことができる",
       content: "ワーキングホリデービザを利用すれば、最長1年間、海外で自由に働きながら滞在することができます。この期間中、現地の文化に深く触れ、語学力を向上させ、かけがえのない経験を積むことができます。",
-      image: "/images/working-holiday-freedom.jpg"
+      image: "https://cdn.midjourney.com/0b4c925c-1238-451d-9c2c-4f165cd60cb4/0_1.png"
     },
     {
       title: "働きながら長期滞在することができる",
