@@ -68,7 +68,7 @@ const WorkingHoliday = () => {
         <section className="mb-16">
           <div className="relative h-64 md:h-96 mb-8">
             <img
-              src="/images/working-holiday-hero.jpg"
+              src="https://cdn.midjourney.com/d0924352-edc0-4e76-95ad-a4ea35acd8ab/0_1.png"
               alt="Working Holiday"
               className="w-full h-full object-cover rounded-lg"
             />
