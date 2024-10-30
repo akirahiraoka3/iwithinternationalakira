@@ -32,7 +32,7 @@ const HighSchoolStudy = () => {
     {
       title: "自立心と適応力の育成",
       content: "海外での生活を通じて、自立心や問題解決能力が培われます。新しい環境に適応する経験は、将来のどんな状況にも対応できる強さを育みます。",
-      image: "/images/highschool-independence.jpg"
+      image: "https://cdn.midjourney.com/21f546be-9573-424a-ae1a-9e6b82bcac30/0_1.png"
     }
   ];
 
