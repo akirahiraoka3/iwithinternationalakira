@@ -40,7 +40,7 @@ const OverseasInternship = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="container mx-auto px-4 py-16">
-        <section className="relative h-64 md:h-96 mb-8">
+        <section className="relative h-80 md:h-[32rem] mb-8">
           <img
             src="https://cdn.midjourney.com/fdd750ac-b4da-4bd1-a6b6-6767768bdb9e/0_1.png"
             alt="Overseas Internship"
