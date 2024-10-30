@@ -22,7 +22,7 @@ const LongTermStudy = () => {
     {
       title: "高度な語学力の習得",
       content: "長期間にわたり現地で生活し学ぶことで、高度な語学力を身につけることができます。日常会話から学術的な内容まで、幅広い場面で使える言語スキルを習得できます。",
-      image: "/images/long-term-language.jpg"
+      image: "https://cdn.midjourney.com/ab90c321-d359-4714-8fb7-57b02b017fae/0_3.png"
     },
     {
       title: "専門知識とスキルの獲得",
