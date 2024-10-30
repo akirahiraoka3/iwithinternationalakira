@@ -32,7 +32,7 @@ const WorkingHoliday = () => {
     {
       title: "よりリアルな文化の違いを体験できる",
       content: "海外で実際に生活することで、旅行や短期滞在では体験できないような文化の違いや生活様式を肌で感じることができます。また、現地の人々との交流を通じて、その国の本当の姿を知ることができます。このような経験は視野を広げ、国際的なキャリアップにもつながる可能性があります。",
-      image: "/images/working-holiday-culture.jpg"
+      image: "https://cdn.midjourney.com/c53a15ae-f26d-48c1-a633-e56f127a6c27/0_1.png"
     }
   ];
 
