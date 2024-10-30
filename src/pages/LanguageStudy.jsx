@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative h-96">
       <img
-        src="https://cdn.midjourney.com/01a8a4aa-1c4a-4fca-b356-f3d8c5f2b0a9/0_0.png"
+        src="https://cdn.midjourney.com/d0924352-edc0-4e76-95ad-a4ea35acd8ab/0_1.png"
         alt="Students in a language class"
         className="w-full h-full object-cover"
       />
