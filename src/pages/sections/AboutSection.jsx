@@ -11,9 +11,9 @@ export const AboutSection = () => (
           className="w-48 h-48 object-contain"
         />
       </div>
-      <h2 className="text-5xl font-bold mb-8 text-[#90FF42] pt-16">国境のない金融</h2>
+      <h2 className="text-5xl font-bold mb-8 text-[#90FF42] pt-16">自分の本気と、出会う年</h2>
       <p className="text-white text-lg mb-8 max-w-3xl mx-auto">
-        あいウィズは世界中でお金を動かすための新しい方法を構築しています。最小限の手数料で、最大限の手軽さとスピードを。
+        あいウィズは世界中でお客様が活躍するための新しい方法を構築しています。最小限の手数料で、最大限の体験と宝物を。
       </p>
       <Button 
         className="bg-[#90FF42] text-[#0B2B0B] hover:bg-[#7DE535] px-8 py-2 rounded-full text-lg font-medium"
