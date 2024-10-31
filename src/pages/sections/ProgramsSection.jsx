@@ -13,7 +13,7 @@ export const ProgramsSection = () => {
       title: '短期・長期留学', 
       description: '海外の高校・大学への留学をトータルサポート。',
       image: 'https://cdn.midjourney.com/d9efade1-2a3f-4cdc-8789-a96b13272d8e/0_2.png',
-      link: '/university-support'
+      link: '/language-study'
     },
     { 
       title: 'ワーキングホリデー', 
