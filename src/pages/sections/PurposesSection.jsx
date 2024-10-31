@@ -19,7 +19,7 @@ export const PurposesSection = () => (
         <div className="text-center">
           <Link to="/programs">
             <Button size="lg" className="bg-black text-white">
-              目的から選ぶ
+              年代・目的から選ぶ
             </Button>
           </Link>
         </div>
