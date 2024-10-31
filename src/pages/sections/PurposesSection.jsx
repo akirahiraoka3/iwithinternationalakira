@@ -14,22 +14,16 @@ export const PurposesSection = () => (
         />
       </div>
       <div className="w-full md:w-1/2">
-        <h3 className="text-2xl font-semibold mb-4">留学で得られるもの</h3>
-        <ul className="list-disc list-inside space-y-2">
-          <li>語学力の向上と異文化理解</li>
-          <li>グローバルなキャリアアップの機会</li>
-          <li>自立心と問題解決能力の育成</li>
-          <li>国際的な人脈の構築</li>
-          <li>新しい視点と価値観の獲得</li>
-        </ul>
+        <h3 className="text-2xl font-semibold mb-4">年代・目的に合わせた渡航プラン</h3>
+        <p className="mb-4">どの年代の人でも費用を抑えて留学することができます</p>
+        <div className="text-center">
+          <Link to="/programs">
+            <Button size="lg" className="bg-black text-white">
+              目的から選ぶ
+            </Button>
+          </Link>
+        </div>
       </div>
-    </div>
-    <div className="text-center">
-      <Link to="/programs">
-        <Button size="lg" className="bg-black text-white">
-          目的から選ぶ
-        </Button>
-      </Link>
     </div>
   </section>
 );
