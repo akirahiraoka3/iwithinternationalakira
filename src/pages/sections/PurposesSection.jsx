@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 export const PurposesSection = () => (
   <section id="purposes" className="container mx-auto px-4 py-16">
-    <h2 className="text-3xl font-bold mb-8 text-center">留学の目的</h2>
     <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
       <div className="w-full md:w-1/2">
         <img
