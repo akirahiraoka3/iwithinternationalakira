@@ -8,7 +8,7 @@ export const PurposesSection = () => (
     <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
       <div className="w-full md:w-1/2">
         <img
-          src="https://cdn.midjourney.com/e27dcce8-dc2c-42b6-a5a3-a07ab832aa25/0_1.png"
+          src="https://cdn.midjourney.com/e92fc2b5-d2c1-4a6d-b967-24665e294bc9/0_2.png"
           alt="留学の目的"
           className="w-full h-auto object-cover rounded-lg mx-auto"
         />
