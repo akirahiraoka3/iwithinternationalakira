@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 const WorkingHoliday = () => {
   const steps = [
@@ -162,6 +164,15 @@ const WorkingHoliday = () => {
             ))}
           </tbody>
         </table>
+
+        <div className="text-center py-16">
+          <p className="text-lg mb-4">その他ご不明な点はお気軽にお問い合わせください</p>
+          <Link to="/#contact">
+            <Button className="bg-black hover:bg-gray-800">
+              お問い合わせ
+            </Button>
+          </Link>
+        </div>
       </main>
       <Footer />
     </div>
