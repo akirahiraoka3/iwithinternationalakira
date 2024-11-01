@@ -83,20 +83,7 @@ const WorkingHoliday = () => {
           </div>
         </section>
 
-        <h2 className="text-2xl font-semibold mb-8 text-center">ワーキングホリデーでできること</h2>
-        {points.map((point, index) => (
-          <div key={index} className={`flex flex-col md:flex-row items-center mb-12 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
-            <div className="w-full md:w-1/2 mb-4 md:mb-0">
-              <h3 className="text-2xl font-bold text-cyan-500 mb-4">{`0${index + 1} ${point.title}`}</h3>
-              <p>{point.content}</p>
-            </div>
-            <div className="w-full md:w-1/2 md:px-4">
-              <img src={point.image} alt={point.title} className="w-full h-auto rounded-lg shadow-md" />
-            </div>
-          </div>
-        ))}
-
-        <h2 className="text-2xl font-semibold mb-8 text-center">ーこの流れでできるー</h2>
+        <h2 className="text-2xl font-semibold mb-8 text-center">ーワーキングホリデーはこの流れー</h2>
         <WorkingHolidaySteps />
 
         <h2 className="text-2xl font-semibold mb-8 text-center">国別情報</h2>
