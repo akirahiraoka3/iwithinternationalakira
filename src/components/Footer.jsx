@@ -9,7 +9,7 @@ const Footer = () => (
           <p className="text-sm">© 2024 IWITH International. All rights reserved.</p>
         </div>
         <div>
-          <h3 className="text-lg font-bold mb-4">留学のプラン</h3>
+          <h3 className="text-lg font-bold mb-4">渡航のプラン</h3>
           <ul className="space-y-2">
             <li><a href="#" className="text-sm hover:text-gray-300">短期留学</a></li>
             <li><a href="#" className="text-sm hover:text-gray-300">長期留学</a></li>
@@ -21,7 +21,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h3 className="text-lg font-bold mb-4">サポート</h3>
+          <h3 className="text-lg font-bold mb-4">ヘルプ＆ガイド</h3>
           <ul className="space-y-2">
             <li><a href="#" className="text-sm hover:text-gray-300">よくある質問</a></li>
             <li><a href="#" className="text-sm hover:text-gray-300">お問い合わせ</a></li>
