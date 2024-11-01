@@ -2,11 +2,11 @@ import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 
 const TimelineItem = ({ icon, title, description }) => (
-  <div className="flex flex-col items-center text-center mb-8">
-    <div className="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white text-2xl mb-4">
+  <div className="flex items-start mb-8">
+    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-white text-2xl mr-4">
       {icon}
     </div>
-    <div className="max-w-2xl">
+    <div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
@@ -81,7 +81,7 @@ export const WorkingHolidaySteps = () => {
     <div>
       {steps.map((step, index) => (
         <div key={index} className="mb-12">
-          <h3 className="text-xl font-semibold mb-6 text-center">{step.title}</h3>
+          <h3 className="text-xl font-semibold mb-6">{step.title}</h3>
           {step.content.map((item, itemIndex) => (
             <TimelineItem
               key={itemIndex}
