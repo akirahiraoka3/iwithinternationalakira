@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom';
 
 const WorkingHoliday = () => {
   const steps = [
@@ -163,6 +165,25 @@ const WorkingHoliday = () => {
           </tbody>
         </table>
       </main>
+
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">Wise Business</h2>
+          <h3 className="text-3xl font-bold mb-6">でお金を節約</h3>
+          <p className="text-gray-600 mb-8">
+            外貨両替の煩わしさにさようなら。2024年、Wiseのお客様は18億ポンド以上の送料コストを節約しました。
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button className="bg-[#4CAF50] hover:bg-[#45a049] text-white rounded-full px-8 py-2">
+              今すぐ登録する
+            </Button>
+            <Button variant="outline" className="border-black text-black hover:bg-gray-100 rounded-full px-8 py-2">
+              営業担当に問い合わせる
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
