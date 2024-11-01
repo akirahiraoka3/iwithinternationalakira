@@ -11,9 +11,13 @@ const Footer = () => (
         <div>
           <h3 className="text-lg font-bold mb-4">留学のプラン</h3>
           <ul className="space-y-2">
+            <li><a href="#" className="text-sm hover:text-gray-300">短期留学</a></li>
+            <li><a href="#" className="text-sm hover:text-gray-300">長期留学</a></li>
             <li><a href="#" className="text-sm hover:text-gray-300">海外インターンシップ</a></li>
-            <li><a href="#" className="text-sm hover:text-gray-300">ワーキングホリデー・語学留学</a></li>
-            <li><a href="#" className="text-sm hover:text-gray-300">高校・大学への留学</a></li>
+            <li><a href="#" className="text-sm hover:text-gray-300">ワーキングホリデー</a></li>
+            <li><a href="#" className="text-sm hover:text-gray-300">中高生留学</a></li>
+            <li><a href="#" className="text-sm hover:text-gray-300">大学留学</a></li>
+            <li><a href="#" className="text-sm hover:text-gray-300">親子留学</a></li>
           </ul>
         </div>
         <div>
