@@ -81,7 +81,7 @@ export const WorkingHolidaySteps = () => {
     <div>
       {steps.map((step, index) => (
         <div key={index} className="mb-12">
-          <h3 className="text-xl font-semibold mb-6">{step.title}</h3>
+          <h3 className="text-xl font-semibold mb-6 text-center">{step.title}</h3>
           {step.content.map((item, itemIndex) => (
             <TimelineItem
               key={itemIndex}
