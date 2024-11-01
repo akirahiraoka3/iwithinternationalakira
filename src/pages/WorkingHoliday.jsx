@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Button } from "@/components/ui/button";
-import { Link } from 'react-router-dom';
 
 const WorkingHoliday = () => {
   const steps = [
@@ -121,17 +119,49 @@ const WorkingHoliday = () => {
           </div>
         ))}
 
-        {/* New Contact Section */}
-        <section className="bg-white py-16 px-4 text-center">
-          <div className="max-w-3xl mx-auto bg-white rounded-lg p-8 shadow-lg">
-            <h2 className="text-3xl font-bold mb-6">その他ご不明な点はお気軽にお問い合わせください</h2>
-            <Link to="/#contact">
-              <Button className="bg-black text-white hover:bg-gray-800 px-8 py-4 text-lg rounded-lg">
-                お問い合わせ
-              </Button>
-            </Link>
-          </div>
-        </section>
+        <h2 className="text-2xl font-semibold mb-8 text-center">国別情報</h2>
+        <table className="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr className="bg-teal-500 text-white">
+              <th className="border border-gray-300 p-2">国名</th>
+              <th className="border border-gray-300 p-2">年齢</th>
+              <th className="border border-gray-300 p-2">ワーキングホリデービザ</th>
+              <th className="border border-gray-300 p-2">申請料金</th>
+              <th className="border border-gray-300 p-2">必要書類</th>
+              <th className="border border-gray-300 p-2">平均費用</th>
+              <th className="border border-gray-300 p-2">保険加入</th>
+              <th className="border border-gray-300 p-2">飛行時間</th>
+              <th className="border border-gray-300 p-2">時差</th>
+              <th className="border border-gray-300 p-2">気候</th>
+              <th className="border border-gray-300 p-2">おすすめ時期</th>
+              <th className="border border-gray-300 p-2">平均気温</th>
+            </tr>
+          </thead>
+          <tbody>
+            {countries.map((country, index) => (
+              <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
+                <td className="border border-gray-300 p-2">{country.name}</td>
+                <td className="border border-gray-300 p-2">{country.age}</td>
+                <td className="border border-gray-300 p-2">{country.workingHolidayVisa}</td>
+                <td className="border border-gray-300 p-2">{country.applicationFee}</td>
+                <td className="border border-gray-300 p-2">
+                  <ul className="list-disc list-inside">
+                    {country.requiredDocuments.map((doc, i) => (
+                      <li key={i}>{doc}</li>
+                    ))}
+                  </ul>
+                </td>
+                <td className="border border-gray-300 p-2">{country.averageCost}</td>
+                <td className="border border-gray-300 p-2">{country.insuranceCost}</td>
+                <td className="border border-gray-300 p-2">{country.flightTime}</td>
+                <td className="border border-gray-300 p-2">{country.timeZone}</td>
+                <td className="border border-gray-300 p-2">{country.climate}</td>
+                <td className="border border-gray-300 p-2">{country.recommendedSeason}</td>
+                <td className="border border-gray-300 p-2">{country.averageTemperature}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </main>
       <Footer />
     </div>
