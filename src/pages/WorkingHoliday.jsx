@@ -83,7 +83,7 @@ const WorkingHoliday = () => {
           </div>
         </section>
 
-        <h2 className="text-2xl font-semibold mb-8 text-center">ワーキングホリデーでできること</h2>
+        <h2 className="text-2xl font-semibold mb-8 text-center mt-24">ワーキングホリデーでできること</h2>
         {points.map((point, index) => (
           <div key={index} className={`flex flex-col md:flex-row items-center mb-12 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
