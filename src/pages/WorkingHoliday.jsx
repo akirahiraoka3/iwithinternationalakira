@@ -97,7 +97,7 @@ const WorkingHoliday = () => {
         ))}
 
         <div className="mt-24">
-          <h2 className="text-2xl font-semibold mb-8 text-center">ーこの流れでできるー</h2>
+          <h2 className="text-2xl font-semibold mb-8 text-center">ーワーキングホリデーはこの流れー</h2>
           <WorkingHolidaySteps />
         </div>
 
